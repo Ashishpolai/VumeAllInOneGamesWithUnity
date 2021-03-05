@@ -16,13 +16,40 @@ public class Cube : MonoBehaviour
 {
     public Text text;    
     void appendToText(string line) { text.text += line + "\n"; }
+    public GameObject btnHeading;
 
     void Update()
     {
         transform.Rotate(0, Time.deltaTime*10, 0);
 		
 		if (Application.platform == RuntimePlatform.Android)
-            if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
+            if (Input.GetKeyDown(KeyCode.Escape)) finishActivity();
+    }
+
+    void loadGame(String gameType)
+    {
+        switch (gameType)
+        {
+            case "ludo":
+                GameObject cube = GameObject.FindGameObjectsWithTag("mycube")[0];
+                    //Get the Renderer component from the new cube
+                var cubeRenderer = cube.GetComponent<Renderer>();
+
+                //Call SetColor using the shader property name "_Color" and setting the color to red
+                cubeRenderer.material.SetColor("_Color", Color.green);
+                showToast("Hello Ludo GREEN from Unity");
+            break;
+
+            case "poker":
+                GameObject cubei = GameObject.FindGameObjectsWithTag("mycube")[0];
+                //Get the Renderer component from the new cube
+                var cubeRendereri = cubei.GetComponent<Renderer>();
+
+                //Call SetColor using the shader property name "_Color" and setting the color to red
+                cubeRendereri.material.SetColor("_Color", Color.yellow);
+                showToast("Hello Poker YELLOW from Unity");
+                break;
+        }
     }
 
     string lastStringColor = "";
@@ -74,6 +101,23 @@ public class Cube : MonoBehaviour
         #endif
     }
 
+    void finishActivity()
+    {
+        #if UNITY_ANDROID
+                try
+                {
+                    AndroidJavaClass jc = new AndroidJavaClass("com.company.product.OverrideUnityActivity");
+                    AndroidJavaObject overrideActivity = jc.GetStatic<AndroidJavaObject>("instance");
+                    overrideActivity.Call("finishMyActivity");
+                }
+                catch (Exception e)
+                {
+                    appendToText("Exception during showHostMainWindow");
+                    appendToText(e.Message);
+                }
+        #endif
+    }
+
     void OnGUI()
     {
         GUIStyle style = new GUIStyle("button");
@@ -82,8 +126,9 @@ public class Cube : MonoBehaviour
         if (GUI.Button(new Rect(10, 110, 200, 100), "Blue", style)) ChangeColor("blue");
         if (GUI.Button(new Rect(10, 300, 400, 100), "Show Main With Color", style)) showHostMainWindow();
 
+       
         if (GUI.Button(new Rect(10, 400, 400, 100), "Show Toast", style)) showToast("Hello from unity!");
-        if (GUI.Button(new Rect(440, 400, 400, 100), "Quit", style)) Application.Quit();
+        if (GUI.Button(new Rect(440, 400, 400, 100), "Quit", style)) finishActivity();
     }
 }
 

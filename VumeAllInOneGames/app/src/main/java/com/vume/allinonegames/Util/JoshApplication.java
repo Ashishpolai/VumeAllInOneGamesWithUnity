@@ -143,6 +143,10 @@ public class JoshApplication extends Application {
     public static final int activityAnimationIn = R.anim.blink;
     public static final int activityAnimationOut = R.anim.blink;
 
+    public static final String UNITY_GAME_TYPE_KEY = "unitygametype";
+    public static final String UNITY_GAME_TYPE_LUDO = "ludo";
+    public static final String UNITY_GAME_TYPE_POKER = "poker";
+
 //Hide everything including status bar
     public static final int hidenavigationandstatusbarflags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
             | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./../UnityProject/androidBuild/unityLibrary/libs/unity-classes.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/libs/unity-classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

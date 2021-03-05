@@ -9,6 +9,8 @@ public abstract class OverrideUnityActivity extends UnityPlayerActivity
     public static OverrideUnityActivity instance = null;
 
     abstract protected void showMainActivity(String setToColor);
+    abstract protected void showToast(String toastMsg);
+    abstract protected void finishMyActivity();
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

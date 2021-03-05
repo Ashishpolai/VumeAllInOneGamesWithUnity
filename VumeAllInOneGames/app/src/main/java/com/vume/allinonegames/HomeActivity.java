@@ -244,9 +244,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn_open_ludo:
-                    loadUnity();
+                    loadUnity(JoshApplication.UNITY_GAME_TYPE_LUDO);
                 break;
             case R.id.btn_open_poker:
+                    loadUnity(JoshApplication.UNITY_GAME_TYPE_POKER);
+                break;
             case R.id.btn_refer:
             case R.id.btn_wallet:
                 Toast.makeText(mActivityContext, "Coming Soon!", Toast.LENGTH_SHORT).show();
@@ -424,10 +426,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 //        }
     }
 
-    public void loadUnity() {
+    public void loadUnity(String gameType) {
         isUnityLoaded = true;
         Intent intent = new Intent(this, MainUnityActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        intent.putExtra(JoshApplication.UNITY_GAME_TYPE_KEY, gameType);
         startActivityForResult(intent, 1);
     }
 

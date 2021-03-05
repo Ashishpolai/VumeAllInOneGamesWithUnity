@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_3a_xl" />
+        <device id="pixel_4_xl" />
+        <device id="pixel_3_xl" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3ed0684-4817-4c7f-958e-0f3e760c91b1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../UnityProject/Assets/Cube.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/Assets/Cube.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/Assets/Plugins/Android/OverrideUnityActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/Assets/Plugins/Android/OverrideUnityActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/.transforms/1546e2f682384e9e283f6a739e501cfd/classes/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/.transforms/1546e2f682384e9e283f6a739e501cfd/classes/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/compile_library_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/compile_library_classes/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/intermediate-jars/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/intermediate-jars/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/intermediate-jars/debug/jni/arm64-v8a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/intermediate-jars/debug/jni/arm64-v8a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/intermediate-jars/debug/jni/arm64-v8a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/intermediate-jars/debug/jni/arm64-v8a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/intermediate-jars/debug/jni/armeabi-v7a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/intermediate-jars/debug/jni/armeabi-v7a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/intermediate-jars/debug/jni/armeabi-v7a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/intermediate-jars/debug/jni/armeabi-v7a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/javac/debug/classes/com/company/product/OverrideUnityActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/javac/debug/classes/com/company/product/OverrideUnityActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/company/product/OverrideUnityActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/company/product/OverrideUnityActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/jniLibs/debug/arm64-v8a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/jniLibs/debug/arm64-v8a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/jniLibs/debug/arm64-v8a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/jniLibs/debug/arm64-v8a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/jniLibs/debug/armeabi-v7a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/jniLibs/debug/armeabi-v7a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/jniLibs/debug/armeabi-v7a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/jniLibs/debug/armeabi-v7a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/out/bin/Data/Managed/Metadata/global-metadata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/out/bin/Data/Managed/Metadata/global-metadata.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/out/bin/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/out/bin/Data/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/out/bin/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/out/bin/Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/out/bin/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/out/bin/Data/globalgamemanagers.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/out/bin/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/out/bin/Data/level0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/packageDebugAssets/out/bin/Data/Managed/Metadata/global-metadata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/packageDebugAssets/out/bin/Data/Managed/Metadata/global-metadata.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/packageDebugAssets/out/bin/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/packageDebugAssets/out/bin/Data/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/packageDebugAssets/out/bin/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/packageDebugAssets/out/bin/Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/packageDebugAssets/out/bin/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/packageDebugAssets/out/bin/Data/globalgamemanagers.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/packageDebugAssets/out/bin/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_assets/debug/packageDebugAssets/out/bin/Data/level0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_jni/debug/jni/arm64-v8a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_jni/debug/jni/arm64-v8a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_jni/debug/jni/arm64-v8a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_jni/debug/jni/arm64-v8a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_jni/debug/jni/armeabi-v7a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_jni/debug/jni/armeabi-v7a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_jni/debug/jni/armeabi-v7a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_jni/debug/jni/armeabi-v7a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_jni_libs/debug/out/arm64-v8a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_jni_libs/debug/out/arm64-v8a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_jni_libs/debug/out/arm64-v8a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_jni_libs/debug/out/arm64-v8a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_jni_libs/debug/out/armeabi-v7a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_jni_libs/debug/out/armeabi-v7a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_jni_libs/debug/out/armeabi-v7a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_jni_libs/debug/out/armeabi-v7a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_native_libs/debug/out/lib/arm64-v8a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_native_libs/debug/out/lib/arm64-v8a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_native_libs/debug/out/lib/arm64-v8a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_native_libs/debug/out/lib/arm64-v8a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_native_libs/debug/out/lib/armeabi-v7a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_native_libs/debug/out/lib/armeabi-v7a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_native_libs/debug/out/lib/armeabi-v7a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/merged_native_libs/debug/out/lib/armeabi-v7a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/runtime_library_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/runtime_library_classes/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/stripped_native_libs/debug/out/lib/arm64-v8a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/stripped_native_libs/debug/out/lib/arm64-v8a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/stripped_native_libs/debug/out/lib/arm64-v8a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/stripped_native_libs/debug/out/lib/arm64-v8a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/stripped_native_libs/debug/out/lib/armeabi-v7a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/stripped_native_libs/debug/out/lib/armeabi-v7a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/stripped_native_libs/debug/out/lib/armeabi-v7a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/stripped_native_libs/debug/out/lib/armeabi-v7a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/mergeJniLibs/debug/0/lib/arm64-v8a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/mergeJniLibs/debug/0/lib/arm64-v8a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/mergeJniLibs/debug/0/lib/arm64-v8a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/mergeJniLibs/debug/0/lib/arm64-v8a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/arm64-v8a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/arm64-v8a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/arm64-v8a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/arm64-v8a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/armeabi-v7a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/armeabi-v7a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/armeabi-v7a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/armeabi-v7a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/assets/bin/Data/Managed/Metadata/global-metadata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/assets/bin/Data/Managed/Metadata/global-metadata.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/assets/bin/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/assets/bin/Data/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/assets/bin/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/assets/bin/Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/assets/bin/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/assets/bin/Data/globalgamemanagers.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/assets/bin/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/assets/bin/Data/level0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/jniLibs/armeabi-v7a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/jniLibs/armeabi-v7a/libil2cpp.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/jniLibs/armeabi-v7a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/jniLibs/armeabi-v7a/libunity.so" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[b02b443]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JoshRummy" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JoshRummy" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JoshRummy" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JoshRummy" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="android" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/app/vumeallinonegameskeystore.keystore" />
+    <option name="KEY_ALIAS" value="vumeallinonegames" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1hvRAmZ0fRqUMjVHxiD8FEgVwuE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ApkExportedModule" value="JoshRummy.app" />
+    <property name="DEBUGGABLE_DEVICE" value="xiaomi-poco_f1-b02b443" />
+    <property name="DEBUGGABLE_PROCESS" value="com.vume.allinonegames" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.1218425131">
+      <recent name="com.vume.allinonegames" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.vume.allinonegames" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames" />
+      <recent name="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/jniLibs/arm64" />
+      <recent name="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/jniLibs/x86" />
+      <recent name="$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/jniLibs/armeabi" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vume.allinonegames.UnityClasses" />
+      <recent name="com.vume.allinonegames.Adapters" />
+      <recent name="com.vume.allinonegames" />
+      <recent name="com.vume.callbreakgame.Model" />
+      <recent name="com.vume.callbreakgame.Adapters" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="VumeAllInOneGame.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JoshCallBreak:app [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.JoshCallBreak:app [signingReport]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3ed0684-4817-4c7f-958e-0f3e760c91b1" name="Default Changelist" comment="" />
+      <created>1600889438580</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600889438580</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="726" y="160" key="#com.intellij.ide.util.MemberChooser" timestamp="1614692448446">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="726" y="160" key="#com.intellij.ide.util.MemberChooser/0.23.1920.979@0.23.1920.979" timestamp="1614692448446" />
+    <state x="374" y="368" width="1172" height="301" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1614951884808">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="374" y="368" width="1172" height="301" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1920.979@0.23.1920.979" timestamp="1614951884808" />
+    <state x="545" y="267" key="AndroidCreateResourceDirectoryDialog" timestamp="1614952716465">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="545" y="267" key="AndroidCreateResourceDirectoryDialog/0.23.1920.979@0.23.1920.979" timestamp="1614952716465" />
+    <state x="660" y="248" key="AndroidProcessChooserDialog" timestamp="1614956299871">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="660" y="248" key="AndroidProcessChooserDialog/0.23.1920.979@0.23.1920.979" timestamp="1614956299871" />
+    <state width="1868" height="457" key="GridCell.Tab.0.bottom" timestamp="1614960761140">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1868" height="457" key="GridCell.Tab.0.bottom/0.23.1920.979@0.23.1920.979" timestamp="1614960761140" />
+    <state width="1868" height="457" key="GridCell.Tab.0.center" timestamp="1614960761140">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1868" height="457" key="GridCell.Tab.0.center/0.23.1920.979@0.23.1920.979" timestamp="1614960761140" />
+    <state width="1868" height="457" key="GridCell.Tab.0.left" timestamp="1614960761139">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1868" height="457" key="GridCell.Tab.0.left/0.23.1920.979@0.23.1920.979" timestamp="1614960761139" />
+    <state width="1868" height="457" key="GridCell.Tab.0.right" timestamp="1614960761140">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1868" height="457" key="GridCell.Tab.0.right/0.23.1920.979@0.23.1920.979" timestamp="1614960761140" />
+    <state width="1868" height="241" key="GridCell.Tab.1.bottom" timestamp="1614959744953">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1868" height="241" key="GridCell.Tab.1.bottom/0.23.1920.979@0.23.1920.979" timestamp="1614959744953" />
+    <state width="1868" height="241" key="GridCell.Tab.1.center" timestamp="1614959744952">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1868" height="241" key="GridCell.Tab.1.center/0.23.1920.979@0.23.1920.979" timestamp="1614959744952" />
+    <state width="1868" height="241" key="GridCell.Tab.1.left" timestamp="1614959744952">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1868" height="241" key="GridCell.Tab.1.left/0.23.1920.979@0.23.1920.979" timestamp="1614959744952" />
+    <state width="1868" height="241" key="GridCell.Tab.1.right" timestamp="1614959744953">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1868" height="241" key="GridCell.Tab.1.right/0.23.1920.979@0.23.1920.979" timestamp="1614959744953" />
+    <state x="720" y="284" key="chooseDestDirectoryDialog" timestamp="1614697370489">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="720" y="284" key="chooseDestDirectoryDialog/0.23.1920.979@0.23.1920.979" timestamp="1614697370489" />
+    <state x="584" y="221" width="757" height="654" key="find.popup" timestamp="1614952455128">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="584" y="221" width="757" height="654" key="find.popup/0.23.1920.979@0.23.1920.979" timestamp="1614952455128" />
+    <state x="541" y="23" width="838" height="979" key="search.everywhere.popup" timestamp="1614965187586">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="541" y="23" width="838" height="979" key="search.everywhere.popup/0.23.1920.979@0.23.1920.979" timestamp="1614965187586" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/LobbyActivity.java</url>
+          <line>648</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/LobbyActivity.java</url>
+          <line>595</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/LobbyActivity.java</url>
+          <line>555</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/LobbyActivity.java</url>
+          <line>652</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/LobbyActivity.java</url>
+          <line>888</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/LobbyActivity.java</url>
+          <line>1302</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/LobbyActivity.java</url>
+          <line>1020</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/RegisterActivity.java</url>
+          <line>463</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/RegisterActivity.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/LoginActivity.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/RegisterActivity.java</url>
+          <line>535</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/RegisterActivity.java</url>
+          <line>627</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/RegisterProfileDetailsActivity.java</url>
+          <line>238</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/ResetPasswordActivity.java</url>
+          <line>546</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/ResetPasswordActivity.java</url>
+          <line>591</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/ResetPasswordActivity.java</url>
+          <line>550</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/ResetPasswordActivity.java</url>
+          <line>464</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/ResetPasswordActivity.java</url>
+          <line>228</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/ProfileActivity.java</url>
+          <line>539</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/LoginActivity.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/LobbyActivity.java</url>
+          <line>1545</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/AddCashActivity.java</url>
+          <line>236</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/Adapters/TransactionHistoryCustomAdapter.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/AddCashActivity.java</url>
+          <line>304</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/WithdrawCashActivity.java</url>
+          <line>417</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/WithdrawCashActivity.java</url>
+          <line>365</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/WithdrawCashActivity.java</url>
+          <line>392</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/WithdrawCashActivity.java</url>
+          <line>444</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/LobbyActivity.java</url>
+          <line>969</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/Adapters/OpenGamesCustomAdapter.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/LobbyActivity.java</url>
+          <line>909</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/src/main/java/com/unity3d/player/UnityPlayerActivity.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/libs/unity-classes.jar!/com/unity3d/player/UnityPlayer.class</url>
+          <line>88</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/libs/unity-classes.jar!/com/unity3d/player/UnityPlayer.class</url>
+          <line>165</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://$PROJECT_DIR$/../UnityProject/androidBuild/unityLibrary/libs/unity-classes.jar!/com/unity3d/player/UnityPlayer.class</url>
+          <line>135</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/vume/allinonegames/HomeActivity.java</url>
+          <line>409</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
