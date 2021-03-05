@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey"
+    tools:context=".Fragment.MatchesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/befirst_to_join_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/rubikregular"
+            android:padding="@dimen/dimen_12dp"
+            android:text="@string/befirst_to_joincontest"
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/pixel_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <View
+            android:id="@+id/first_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pixel_1dp"
+            android:background="@color/base"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/befirst_to_join_msg"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/rank_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/rubikregular"
+            android:padding="@dimen/dimen_8dp"
+            android:text="@string/rank"
+            android:textAllCaps="true"
+            android:textColor="@color/base"
+            android:textSize="@dimen/pixel_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_divider"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/prize_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/rubikregular"
+            android:padding="@dimen/dimen_8dp"
+            android:text="@string/prize_label"
+            android:textAllCaps="true"
+            android:textColor="@color/base"
+            android:textSize="@dimen/pixel_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_divider"
+            app:layout_constraintVertical_bias="0" />
+
+        <View
+            android:id="@+id/second_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pixel_1dp"
+            android:background="@color/base"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prize_label"
+            app:layout_constraintVertical_bias="0" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/prizeamount_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pixel_0dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/second_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

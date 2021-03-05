@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#F6F1F9</color>
+    <color name="primary_dark">#135190</color>
+    <color name="primary_darker">#2D2960</color>
+    <color name="statusbarcolor_postlogin">#ff8a34</color>
+    <color name="secondary">#F7FAEA</color>
+    <color name="secondary_indigo">#29218D</color>
+    <color name="secondary_indigobutton">#5F59ED</color>
+    <color name="secondary_indigobuttonshadow">#323CA0</color>
+    <color name="accent">#EB5757</color>
+    <color name="maroon">#800000</color>
+
+    <color name="disabled">#696969</color>
+    <color name="pressed">#D63B30</color>
+
+    <color name="editext_stroke_color">#beab84</color>
+    <color name="primary_blue">#1A70C7</color>
+    <color name="primary_light_blue">#6899cc</color>
+    <color name="light_sky_blue">#e2edf4</color>
+    <color name="turquoise">#3FB0B5</color>
+    <color name="red">#FF0000</color>
+    <color name="red_button">#FF4747</color>
+    <color name="dark_red_button">#E62E2E</color>
+    <color name="frangipani">#FFDEBA</color>
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="blue_two">#8163EE</color>
+    <color name="mustard">#F29440</color>
+    <color name="caper_six">#F7FAEA</color>
+    <color name="orangy_yellow_opacity">#cfc4a8</color>
+    <color name="orangy_yellow_med_opacity">#baa675</color>
+    <color name="orangy_yellow">#FCB73C</color>
+    <color name="orangy_yellow_light">#FDC767</color>
+    <color name="orangydark">#7E5813</color>
+    <color name="secondary_grey">#F2F2F2</color>
+    <color name="monsoon">#777777</color>
+    <color name="grey_four">#BDBDBD</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="secondarygreyone">#393A3E</color>
+    <color name="darkergrey">#232429</color>
+    <color name="secondarycaper">#E3EEBA</color>
+    <color name="secondarygreythree">#919294</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="milky_white">#F3F3F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#F2F2F2</color>
+    <color name="disabled_text">#ebebe4</color>
+    <color name="button_green">#63AB8C</color>
+    <color name="darkgrey">#4F4F4F</color>
+    <color name="green_four">#27AE6A</color>
+    <color name="switch_green">#6FCF97</color>
+    <color name="darkest_green">#20875B</color>
+    <color name="green">#007A00</color>
+    <color name="light_green">#8FDDB4</color>
+    <color name="dark_green">#48B37B</color>
+    <color name="darker_green">#339A64</color>
+    <color name="black_end">#06101d</color>
+    <color name="victoria">#42408A</color>
+    <color name="hyperlink_blue">#1569C7</color>
+    <color name="yellow">#e6e600</color>
+    <color name="secondary_yellow">#F2C94C</color>
+    <color name="orange">#FF8A05</color>
+    <color name="transparent_orange">#d29b37</color>
+
+    <color name="DrawerTransaprentBG">#00000000</color>
+    <color name="DrawerTransaprentBG_10">#10000000</color>
+    <color name="DrawerTransaprentBG_20">#20000000</color>
+    <color name="DrawerTransaprentBG_30">#30000000</color>
+    <color name="DrawerTransaprentBG_40">#40000000</color>
+    <color name="DrawerTransaprentBG_50">#50000000</color>
+    <color name="DrawerTransaprentBG_60">#60000000</color>
+    <color name="DrawerTransaprentBG_70">#70000000</color>
+    <color name="DrawerTransaprentBG_80">#80000000</color>
+
+    <color name="DrawerTransaprentWhiteBG">#00FFFFFF </color>
+    <color name="DrawerTransaprentWhiteBG_10">#10FFFFFF</color>
+    <color name="DrawerTransaprentWhiteBG_20">#20FFFFFF</color>
+    <color name="DrawerTransaprentWhiteBG_30">#30FFFFFF</color>
+    <color name="DrawerTransaprentWhiteBG_40">#40FFFFFF</color>
+    <color name="DrawerTransaprentWhiteBG_50">#50FFFFFF</color>
+    <color name="DrawerTransaprentWhiteBG_60">#60FFFFFF</color>
+    <color name="DrawerTransaprentWhiteBG_70">#70FFFFFF</color>
+    <color name="DrawerTransaprentWhiteBG_80">#80FFFFFF</color>
+
+    <color name="loading_screen_progress">#E15A33</color>
+    <color name="laoding_screen_empty">#F2F2F2</color>
+    <color name="editext_color">#6a719b</color>
+
+    <color name="pink">#EB5757</color>
+    <color name="light_pink">#eec7cd</color>
+</resources>

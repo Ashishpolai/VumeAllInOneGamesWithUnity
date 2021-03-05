@@ -1,0 +1,798 @@
+<resources>
+    <string name="app_name">Vume Games</string>
+    <string name="rummy_app_name">Josh Rummy</string>
+    <string name="callbreak_app_name">Josh Callbreak</string>
+    <string name="fantasy_league_app_name">Fantasy League</string>
+    <string name="app_version">App version : %1$s</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading_text">Loading ...</string>
+
+    <string name="game_view_content_description">Game view</string>
+
+    <string name="josh_server_api_key">cqknjvlljhs9</string>
+    <string name="notification_channel_id">joshrummmynotificationchannel</string>
+    <string name="fcm_server_key">AAAA1VpU6HE:APA91bH_gSF8Hs0Jj8Ie4I7zFKJmdV5NbZuj0EZd1JP89VonG6iLPxBWsIMGhZwQxMiyvH6P0O3v4Y9cl9dD2EeXjqsMYhAJAc8x7pHBOKEz6Zrj_GF3ngUXm58OL2TbDJ4ySXCezXby</string>
+    <string name="fcm_sender_id">916343548017</string>
+
+    <string name="gametype_rummy">Rummy</string>
+    <string name="gametype_callbreak">CallBreak</string>
+
+    <!--    PAYTM ALL IN ONE GATEWAY-->
+    <!--    STAGING ID-->
+    <string name="paytm_merchantid">rqVxKU10934034518936</string>
+
+    <string name="home_bottom_menu">Home</string>
+    <string name="fantasy_bottom_menu">Fantasy</string>
+    <string name="refer_bottom_menu">Refer</string>
+    <string name="wallet_bottom_menu">Wallet</string>
+
+    <string name="upcoming">Upcoming</string>
+    <string name="live">Live</string>
+    <string name="completed">Completed</string>
+
+    <string name="match_countdown_timer">Starts in: %1$s</string>
+    <string name="live_now_msg">Live Now</string>
+    <string name="match_ended_msg">Match Ended</string>
+
+    <string name="join">Join</string>
+    <string name="total_prize">Total Prize</string>
+    <string name="entry_fee">Entry Fee</string>
+    <string name="entry">Entry</string>
+
+    <string name="contest_lowercase_title">Contest</string>
+    <string name="contest_title">Contests</string>
+    <string name="createteam_title">CREATE TEAM</string>
+
+    <string name="prize_pool">Prize Pool</string>
+    <string name="winners_prize_amount">Winners Prize Amount</string>
+    <string name="rank">Rank</string>
+    <string name="prize_amount">Prize Amount</string>
+    <string name="prize_label">Prize</string>
+
+    <string name="matches_tabname">Matches</string>
+    <string name="mymatches_tabname">My Matches</string>
+    <string name="contestdetails_tabname">Contest Details</string>
+    <string name="leaderboard_tabname">Leaderboard</string>
+
+    <string name="befirst_to_joincontest">Be the first in your network to join this contest.</string>
+
+    <string name="no_matches_error">No Matches found!</string>
+    <string name="no_contests_error">No Contests found!</string>
+    <string name="no_players_error">No Players found!</string>
+    <string name="select_captain_and_vicecaptain">Select your Captain and Vice-Captain to proceed!</string>
+    <string name="enter_your_team_name">Enter your team name to proceed!</string>
+    <string name="captain_and_vicecaptain_different">Captain and Vice-Captain cannot be a same Player!</string>
+    <string name="next">Next</string>
+    <string name="team_preview">Team Preview</string>
+
+    <string name="new_team_created">New Team Created!</string>
+
+    <string name="choose_captainandvicecaptain">Choose your Captain and Vice Captain</string>
+    <string name="captain_vicecaptain_benefits">C gets 2x points, VC gets 1.5x points</string>
+
+    <string name="select_match">Select Match</string>
+    <string name="create_team">Create Team</string>
+    <string name="join_contest">Join Contest</string>
+
+    <string name="players_count">Players <strong>%1$s/%2$s</strong></string>
+    <string name="team_member_count">%1$s <strong>%2$s</strong> | %3$s <strong>%4$s</strong></string>
+    <string name="credit_left">Credits Left</string>
+    <string name="credit_count"><strong>%1$s</strong>/<strong>%2$s</strong></string>
+
+    <string name="bowlers_min_req">PICK %1$s-%2$s Bowlers</string>
+    <string name="batsman_min_req">PICK %1$s-%2$s Batsman</string>
+    <string name="keeper_min_req">PICK %1$s-%2$s Keepers</string>
+    <string name="allrounder_min_req">PICK %1$s-%2$s AllRounders</string>
+
+    <string name="max_keepers_selected">Max Keepers already selected!</string>
+    <string name="max_batsman_selected">Max Batsman already selected!</string>
+    <string name="max_bowlers_selected">Max Bowlers already selected!</string>
+    <string name="max_allrounders_selected">Max AllRounders already selected!</string>
+    <string name="max_players_selected">Team is full!</string>
+    <string name="max_credits_reached">Credits not enough!</string>
+    <string name="invalid_team_selected_error">Selected Team is not Valid! </string>
+    <string name="select_team_for_contest_error">Please, Select your team for the contest! </string>
+
+    <string name="enter_teamname_hint">Enter Team Name</string>
+
+    <string name="time_left">%1$s left</string>
+
+    <string name="no_saved_teams_found">No Saved Teams found! Create your team.</string>
+
+    <string name="player">Player</string>
+    <string name="points">Points</string>
+    <string name="selected_percent">Selected %</string>
+    <string name="credits">Credits</string>
+
+    <string name="type_heading">TYPE</string>
+    <string name="points_heading">POINTS</string>
+    <string name="percent_captain_heading">%C BY</string>
+    <string name="percent_vicecap_heading">%VC BY</string>
+
+    <string name="save_team">Save Team</string>
+    <string name="join_with_team">Join With Team</string>
+    <string name="join_now">Join Now</string>
+    <string name="create_new_team">Create New Team</string>
+    <string name="total_winnings">Total Winnings : </string>
+    <string name="entry_fee_label">Entry Fee : </string>
+
+    <string name="benefittwice">2x</string>
+    <string name="benfitonepointfive">1.5x</string>
+    <string name="captain_short">C</string>
+    <string name="vicecaptain_short">VC</string>
+    <string name="captain">Captain</string>
+    <string name="vicecaptain">Vice Captain</string>
+
+    <string name="batsman_shortname">BAT</string>
+    <string name="bowler_shortname">BOW</string>
+    <string name="allrounder_shortname">ALR</string>
+    <string name="wicketkeeper_shortname">WK</string>
+
+    <string name="saving_team">Saving Team...</string>
+    <string name="loading_match_details">Loading all matches...</string>
+    <string name="loading_my_match_details">Loading all my matches...</string>
+    <string name="joining_contest">Joining Contest...</string>
+    <string name="loading_all_contests_formatch">Loading all contests...</string>
+    <string name="loading_all_players_formatch">Loading all players...</string>
+    <string name="loading_contest_details">Loading contest details...</string>
+
+    <string name="teams_joined_data">Teams Joined: %1$s/%2$s</string>
+    <string name="total_winners">Winners: %1$s</string>
+    <string name="spots_left_msg">%1$s spots left</string>
+    <string name="total_spots_msg">%1$s spots</string>
+
+    <string name="match_live_message">Match is already live!</string>
+    <string name="match_completed_message">Match is already completed!</string>
+
+    <string name="create_your_team">Create Your Team</string>
+    <string name="create_or_editteam">Create / Edit Teams</string>
+    <string name="my_contests">My Contests</string>
+
+    <!-- RAZORPAY PAYMENT GATEWAY -->
+    <!-- PROD ID-->
+    <!--    <string name="razorpay_keyid">rzp_live_iSJ7uPkRPYySJe</string>-->
+    <!--    <string name="razorpay_keysecret">5aNAB94VOzPkMrgfaSbyYf1j</string>-->
+
+    <!-- TEST ID-->
+    <string name="razorpay_keyid">rzp_test_URl2YlbzrS0Zd0</string>
+    <string name="razorpay_keysecret">3HvVBoeTJOxwZ9pmPtok3KWo</string>
+
+    <!--    SPLASH SCREEN-->
+    <string name="update_available_alert">An update is available for you</string>
+    <string name="install">Install</string>
+
+    <!--    LOGIN REGISTER SCREEN-->
+    <string name="login_screen_msg">Welcome to\nVume Games</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="remember_me_login">Keep me signed in</string>
+    <string name="new_to_joshrummy">New to Vume Games?</string>
+    <string name="new_user">New User?</string>
+    <string name="resend_otp_link">Resend OTP!</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password_btn_text">Reset Password</string>
+    <string name="reset_password">Reset</string>
+    <string name="fill_all_entries_error_title">Invalid/No Entries!</string>
+    <string name="fill_all_entries_error">Please, enter all the entries to proceed!</string>
+    <string name="min_withdrawable_balance_error">Withdrawable balance should be atleast ₹%1$s!</string>
+    <string name="fill_withdrawbalance_error">Please, enter valid withdrawal balance to proceed!</string>
+    <string name="invalid_password_error">Password\'s should be of 8-20 chars, with atleast 1 number, 1 lowercase, 1 uppercase and 1 special character! Shouldn\'t contain a space!</string>
+    <string name="invalid_username_error">Username should be of 3-20 chars and should only contains Alphanumeric characters and underscores (_). And, the first character must be an Alphabet!</string>
+    <string name="invalid_accountholdername">Account holder name can only contain Alphabets!</string>
+    <string name="invalid_bankname">Invalid Bankname!</string>
+    <string name="select_from_autocomplete_bankname">Please, select a valid Bank Name from autoselect.</string>
+    <string name="fill_addcash_entries_error_title">Invalid/No Entries!</string>
+    <string name="fill_addcash_entries_error">Please, enter the cash amount to add!</string>
+    <string name="enter_valid_email_error_title">Invalid Email ID!</string>
+    <string name="enter_valid_email_error_msg">Please, enter Valid Email ID!</string>
+    <string name="login_label">Login</string>
+    <string name="register_label">Register</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="logging_in_progress">Logging in...</string>
+
+    <!--    RESET PASSWORD-->
+    <string name="enter_mobile_heading">Enter your mobile number</string>
+    <string name="enter_mobile_no_hint">Mobile number</string>
+    <string name="label_mobileno">Mobile number</string>
+    <string name="get_otp_label">Get OTP</string>
+    <string name="enter_otp_heading">OTP sent to %1$s</string>
+    <string name="label_enterotp">Enter the OTP</string>
+    <string name="hint_enterotp">OTP</string>
+    <string name="resendotp">Resend OTP</string>
+    <string name="reset_pass_heading">Reset Password</string>
+    <string name="label_new_pass">Set new password</string>
+    <string name="hint_new_pass">New password</string>
+    <string name="label_confirm_pass">Confirm new password</string>
+    <string name="hint_confirm_pass">Confirm new password</string>
+    <string name="remember_me">Remember me</string>
+
+    <!--    REGISTARTION SCREEN-->
+    <string name="heading_choose_language">Choose your language</string>
+    <string name="heading_registerforrummy">Register for Josh CallBreak</string>
+    <string name="heading_set_password">Set a password</string>
+    <string name="lang_english">English</string>
+    <string name="lang_hindi">हिन्दी</string>
+    <string name="lang_tamil">தமிழ்</string>
+    <string name="lang_telugu">తెలుగు</string>
+    <string name="lang_malayalam">മലയാളം</string>
+    <string name="lang_kannada">ಕನ್ನಡ</string>
+    <string name="confirm_langauge">Confirm %1$s</string>
+    <string name="label_referralcode">Referral code(Optional)</string>
+    <string name="label_haveanaccount">Have an account?</string>
+    <string name="edit_mobile_no">Edit mobile number</string>
+    <string-array name="available_langauges">
+        <item>English</item>
+        <item>हिन्दी</item>
+        <item>తెలుగు</item>
+        <item>தமிழ்</item>
+        <item>മലയാളം</item>
+        <item>ಕನ್ನಡ</item>
+    </string-array>
+    <string name="select_bank">Select Bank</string>
+    <string name="select_country_code">Select Country code</string>
+    <string-array name="country_code">
+        <item>Afghanistan (+93)</item>
+        <item>Albania (+355)</item>
+        <item>Algeria (+213)</item>
+        <item>American Samoa (+1684)</item>
+        <item>Andorra (+376)</item>
+        <item>Angola (+1264)</item>
+        <item>Anguilla (+244)</item>
+        <item>Antarctica (+672)</item>
+        <item>Antigua and Barbuda (+1268)</item>
+        <item>Argentina (+54)</item>
+        <item>Armenia (+374)</item>
+        <item>Aruba (+297)</item>
+        <item>Australia (+61)</item>
+        <item>Austria (+43)</item>
+        <item>Azerbaijan (+994)</item>
+        <item>Bahamas (+1242)</item>
+        <item>Bahrain (+973)</item>
+        <item>Bangladesh (+880)</item>
+        <item>Barbados (+1246)</item>
+        <item>Belarus (+375)</item>
+        <item>Belgium (+32)</item>
+        <item>Belize (+501)</item>
+        <item>Benin (+229)</item>
+        <item>Bermuda (+1441)</item>
+        <item>Bhutan (+975)</item>
+        <item>Bolivia (+591)</item>
+        <item>Bosnia and Herzegovina (+387)</item>
+        <item>Botswana (+267)</item>
+        <item>Brazil (+55)</item>
+        <item>British Indian Ocean Territory (+246)</item>
+        <item>British Virgin Islands (+1284)</item>
+        <item>Brunei (+673)</item>
+        <item>Bulgaria (+359)</item>
+        <item>Burkina Faso (+226)</item>
+        <item>Burundi (+257)</item>
+        <item>Cambodia (+855)</item>
+        <item>Cameroon (+237)</item>
+        <item>Canada (+1)</item>
+        <item>Cape Verde (+238)</item>
+        <item>Cayman Islands (+1345)</item>
+        <item>Central African Republic (+236)</item>
+        <item>Chad (+235)</item>
+        <item>Chile (+56)</item>
+        <item>China (+86)</item>
+        <item>Christmas Island (+61)</item>
+        <item>Cocos Islands (+61)</item>
+        <item>Colombia (+57)</item>
+        <item>Comoros (+269)</item>
+        <item>Cook Islands (+682)</item>
+        <item>Costa Rica (+506)</item>
+        <item>Croatia (+385)</item>
+        <item>Cuba (+53)</item>
+        <item>Curacao (599)</item>
+        <item>Cyprus (+357)</item>
+        <item>Czech Republic (+420)</item>
+        <item>Denmark (+45)</item>
+        <item>Djibouti (+253)</item>
+        <item>Dominica (+1767)</item>
+        <item>Dominican Republic (+1809)</item>
+        <item>Dominican Republic (+1829)</item>
+        <item>Dominican Republic (+1849)</item>
+        <item>Democratic Republic of the Congo (+243)</item>
+        <item>East Timor (+670)</item>
+        <item>Ecuador (+593)</item>
+        <item>Egypt (+20)</item>
+        <item>El Salvador (+503)</item>
+        <item>Equatorial Guinea (+240)</item>
+        <item>Eritrea (+291)</item>
+        <item>Estonia (+372)</item>
+        <item>Ethiopia (+251)</item>
+        <item>Falkland Islands (+500)</item>
+        <item>Faroe Islands (+298)</item>
+        <item>Fiji (+679)</item>
+        <item>Finland (+358)</item>
+        <item>France (+33)</item>
+        <item>French Polynesia (+689)</item>
+        <item>Gabon (+241)</item>
+        <item>Gambia (+220)</item>
+        <item>Georgia (+995)</item>
+        <item>Germany (+49)</item>
+        <item>Ghana (+233)</item>
+        <item>Gibraltar (+350)</item>
+        <item>Greece (+30)</item>
+        <item>Greenland (+299)</item>
+        <item>Grenada (+1473)</item>
+        <item>Guam (+1671)</item>
+        <item>Guatemala (+502)</item>
+        <item>Guernsey (+44)</item>
+        <item>Guinea (224)</item>
+        <item>Guinea-Bissau (+245)</item>
+        <item>Guyana (+592)</item>
+        <item>Haiti (+509)</item>
+        <item>Honduras (+504)</item>
+        <item>Hong Kong (+852)</item>
+        <item>Hungary (+36)</item>
+        <item>Iceland (+354)</item>
+        <item>India (+91)</item>
+        <item>Indonesia (+62)</item>
+        <item>Iran (+98)</item>
+        <item>Iraq (+964)</item>
+        <item>Ireland (+353)</item>
+        <item>Isle of Man (+44)</item>
+        <item>Israel (+972)</item>
+        <item>Italy (+39)</item>
+        <item>Ivory Coast (+225)</item>
+        <item>Jamaica (+1876)</item>
+        <item>Japan (+81)</item>
+        <item>Jersey (+44)</item>
+        <item>Jordan (+962)</item>
+        <item>Kazakhstan (+7)</item>
+        <item>Kenya (+254)</item>
+        <item>Kiribati (+686)</item>
+        <item>Kosovo (+383)</item>
+        <item>Kuwait (+965)</item>
+        <item>Kyrgyzstan (+996)</item>
+        <item>Laos (+856)</item>
+        <item>Latvia (+371)</item>
+        <item>Lebanon (+961)</item>
+        <item>Lesotho (+266)</item>
+        <item>Liberia (+231)</item>
+        <item>Libya (+218)</item>
+        <item>Liechtenstein (+423)</item>
+        <item>Lithuania (+370)</item>
+        <item>Luxembourg (+352)</item>
+        <item>Macau (+853)</item>
+        <item>Macedonia	 (+389)</item>
+        <item>Madagascar (+261)</item>
+        <item>Malawi (+265)</item>
+        <item>Malaysia (+60)</item>
+        <item>Maldives (+960)</item>
+        <item>Mali (+223)</item>
+        <item>Malta (+356)</item>
+        <item>Marshall Islands (+692)</item>
+        <item>Mauritania (+222)</item>
+        <item>Mauritius (+230)</item>
+        <item>Mayotte (+262)</item>
+        <item>Mexico (+52)</item>
+        <item>Micronesia (+691)</item>
+        <item>Moldova (+373)</item>
+        <item>Monaco (+377)</item>
+        <item>Mongolia (+976)</item>
+        <item>Montenegro (+382)</item>
+        <item>Montserrat (+1664)</item>
+        <item>Morocco (+212)</item>
+        <item>Mozambique (+258)</item>
+        <item>Myanmar (+95)</item>
+        <item>Namibia (+264)</item>
+        <item>Nauru (+674)</item>
+        <item>Nepal (+977)</item>
+        <item>Netherlands (+31)</item>
+        <item>Netherlands Antilles (+599)</item>
+        <item>New Caledonia (+687)</item>
+        <item>New Zealand (+64)</item>
+        <item>Nicaragua (+505)</item>
+        <item>Niger (+227)</item>
+        <item>Nigeria (+234)</item>
+        <item>Niue (+683)</item>
+        <item>North Korea (+850)</item>
+        <item>Northern Mariana Islands (+1670)</item>
+        <item>Norway (+47)</item>
+        <item>Oman (+968)</item>
+        <item>Pakistan (+92)</item>
+        <item>Palau (+680)</item>
+        <item>Palestine (+970)</item>
+        <item>Panama (+507)</item>
+        <item>Papua New Guinea (+675)</item>
+        <item>Paraguay (+595)</item>
+        <item>Peru (+51)</item>
+        <item>Philippines (+63)</item>
+        <item>Pitcairn (+64)</item>
+        <item>PN (+870)</item>
+        <item>Poland (+48)</item>
+        <item>Portugal (+351)</item>
+        <item>Puerto Rico (+1)</item>
+        <item>Qatar (+974)</item>
+        <item>Republic of the Congo (+242)</item>
+        <item>Reunion (+262)</item>
+        <item>Romania (+40)</item>
+        <item>Russia (+7)</item>
+        <item>Rwanda (+250)</item>
+        <item>Saint Barthelemy (+590)</item>
+        <item>Saint Helena (+290)</item>
+        <item>Saint Kitts and Nevis (+1869)</item>
+        <item>Saint Lucia (+1758)</item>
+        <item>Saint Martin (+590)</item>
+        <item>Saint Pierre and Miquelon	 (+508)</item>
+        <item>Saint Vincent and the Grenadines (+1784)</item>
+        <item>Samoa (+685)</item>
+        <item>San Marino (+378)</item>
+        <item>Sao Tome and Principe	 (+239)</item>
+        <item>Saudi Arabia (+966)</item>
+        <item>Senegal (+221)</item>
+        <item>Serbia (+381)</item>
+        <item>Seychelles (+248)</item>
+        <item>Sierra Leone (+232)</item>
+        <item>Singapore (+65)</item>
+        <item>Sint Maarten (+1721)</item>
+        <item>Slovakia (+421)</item>
+        <item>Slovenia (+386)</item>
+        <item>Solomon Islands (+677)</item>
+        <item>Somalia (+252)</item>
+        <item>South Africa (+27)</item>
+        <item>South Korea (+82)</item>
+        <item>South Sudan (+211)</item>
+        <item>Spain (+34)</item>
+        <item>Sri Lanka (+94)</item>
+        <item>Sudan (+249)</item>
+        <item>Suriname (+597)</item>
+        <item>Svalbard and Jan Mayen (+47)</item>
+        <item>Swaziland (+268)</item>
+        <item>Sweden (+46)</item>
+        <item>Switzerland (+41)</item>
+        <item>Syria (+963)</item>
+        <item>Taiwan (+886)</item>
+        <item>Tajikistan (+992)</item>
+        <item>Tanzania (+255)</item>
+        <item>Thailand (+66)</item>
+        <item>Togo (+228)</item>
+        <item>Tokelau (+690)</item>
+        <item>Tonga (+676)</item>
+        <item>Tunisia (+216)</item>
+        <item>Turkey (+90)</item>
+        <item>Turkmenistan (+993)</item>
+        <item>Turks and Caicos Islands (+1649)</item>
+        <item>Tuvalu (+688)</item>
+        <item>U.S. Virgin Islands (+1340)</item>
+        <item>Uganda (+256)</item>
+        <item>Ukraine (+380)</item>
+        <item>United Arab Emirates (+971)</item>
+        <item>United Kingdom (+44)</item>
+        <item>United States (+1)</item>
+        <item>Uruguay (+598)</item>
+        <item>Uzbekistan (+998)</item>
+        <item>Vanuatu (+678)</item>
+        <item>Vatican (+379)</item>
+        <item>Venezuela	(+58)</item>
+        <item>Vietnam (+84)</item>
+        <item>Wallis and Futuna (+681)</item>
+        <item>Yemen (+967)</item>
+        <item>Zambia (+260)</item>
+        <item>Zimbabwe (+263)</item>
+    </string-array>
+    <string name="sending_verification_code">Sending verification code...</string>
+    <string name="verifying_otp">Verifying OTP...</string>
+    <string name="otp_countdowntimer">0:%1$s</string>
+    <string name="otp_countdowntimerwithzero">0:0%1$s</string>
+    <string name="resending_otp">Resending OTP...</string>
+    <string name="registering_in">Registering your account...</string>
+    <string name="resetting_password">Resetting your password...</string>
+
+    <string name="password_confirmpass_doesntmatch">Password and Confirm-Password doesn"'"t match!</string>
+
+    <!--    SIGNUP BONUS-->
+    <string name="congratulations">Congratulations!</string>
+    <string name="thirtydays">30\ndays</string>
+    <string name="thirtydays_msg">Play without paying anything</string>
+    <string name="thirtydays_paymoreearnmore">Pay more and earn more every game</string>
+    <string name="proceed_buttonlabel">Proceed</string>
+    <string name="playmore">PLAYMORE</string>
+    <string name="referral_msg">Refer your friends and for every friend joining you get 15 additional days of commission free play.</string>
+    <string name="referral_question">Want to play more days without commission?</string>
+
+    <!--    SIGNUP PROFILE-->
+    <string name="label_emailid">Email ID</string>
+    <string name="label_dateofbirth">Date of birth</string>
+
+    <!--    MENU ITEMS-->
+    <string name="menu_profile">Profile</string>
+    <string name="menu_addcash">Add cash</string>
+    <string name="menu_withdrawcash">Withdraw Cash</string>
+    <string name="menu_transactionhistory">Transaction History</string>
+    <string name="menu_referralsandoffers">Offers Zone</string>
+    <string name="menu_contactus">Contact us</string>
+    <string name="menu_termsandconditions">Terms &amp; Conditions</string>
+    <string name="menu_aboutus">About</string>
+    <string name="faqs">FAQs</string>
+
+    <!--    LOBBY SCREEN-->
+    <string name="cash_balance">Cash Balance</string>
+    <string name="additional_earnings">Additional Earnings ₹5000</string>
+    <string name="online_text">Online 1,25,000</string>
+    <string name="favourites">Favourites</string>
+    <string name="twozeroone_rummy">201 Rummy</string>
+    <string name="onezeroone_rummy">101 Rummy</string>
+    <string name="points_rummy">Points Rummy</string>
+    <string name="deals_rummy">Deals Rummy</string>
+    <string name="two_players">2 players</string>
+    <string name="siz_players">6 players</string>
+    <string name="rupee_sign">₹</string>
+    <string name="betamountlabel">Bet amount</string>
+    <string name="playerslabel">Players</string>
+    <string name="gamelabel">Game</string>
+    <string name="deals_label">Deals</string>
+    <string name="retry_no">Retry No. </string>
+    <string name="max_retries_reached">Max Retries Reached!</string>
+
+    <!--    PLAY WITH FRIENDS-->
+    <string name="play_with_friends">Play with friends</string>
+    <string name="create_private_table">Create a private table</string>
+    <string name="join_a_table">Join a table</string>
+    <string name="join_string">Join</string>
+    <string name="enter_tableid_hint">Enter Table ID</string>
+
+    <!--    EDIT PROFILE -->
+    <string name="profile_label_username">User name</string>
+    <string name="profile_label_password">Password</string>
+    <string name="profile_label_emailid">Email ID</string>
+    <string name="profile_label_mobileno">Mobile number</string>
+    <string name="profile_label_bankaccount">Bank account</string>
+    <string name="profile_label_kycdetails">KYC details</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+    <string name="view">View</string>
+    <string name="edt_username">Edit User name</string>
+    <string name="edt_password">Edit Password</string>
+    <string name="edt_emailid">Edit Email ID</string>
+    <string name="Ok_label">Ok</string>
+    <string name="not_available">NA</string>
+
+    <!--    UPDAT BANK ACCOUNT-->
+    <string name="submit_bankdetails_heading">Submit bank details</string>
+    <string name="update_bank_account_heading">Update bank account</string>
+    <string name="label_accountholdername">Account holder name</string>
+    <string name="label_bankname">Bank name</string>
+    <string name="label_accountnumber">Account number</string>
+    <string name="label_branch">Branch</string>
+    <string name="label_ifsccode">IFSC code</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="edit_bankacc_note">Note : Please contact customer support to edit/change bank account details</string>
+
+    <!--    UPDATE KYC-->
+    <string name="update_kyc_heading">Update KYC</string>
+    <string name="update_kyc_subheading">Choose a Government ID</string>
+    <string name="governmentid_aadhar">Aadhaar</string>
+    <string name="governmentid_drivinglicence">Driving Licence</string>
+    <string name="governmentid_voterid">Voter ID</string>
+    <string name="governmentid_passport">Passport</string>
+    <string name="frontof_aadhaar">Front of Aadhaar</string>
+    <string name="backof_aadhaar">Back of Aadhaar</string>
+    <string name="frontof_voterid">Front of Voter-ID</string>
+    <string name="backof_voterid">Back of Voter-ID</string>
+    <string name="frontof_passport">Front of Passport</string>
+    <string name="backof_passport">Back of Passport</string>
+    <string name="frontof_drivinglicence">Front of Driving-Licence</string>
+    <string name="backof_drivinglicence">Back of Driving-Licence</string>
+    <string name="photo">Photo</string>
+    <string name="uploading_kyc_doc">Uploading KYC document...</string>
+    <string name="kyc_upload_done">KYC Upload Successful!</string>
+    <string name="kyc_status_beingverified">Your details are being verfied</string>
+    <string name="kyc_status_verified">KYC successful</string>
+
+    <!--    WITHDRAW CASH-->
+    <string name="withdraw_cash_heading">Withdraw Cash</string>
+    <string name="kyc_label">KYC</string>
+    <string name="withdrawable_balance_label">Withdrawable balance : ₹</string>
+    <string name="requested_withdrawbalance_label">Requested Withdraw balance : ₹</string>
+    <string name="type_withdraw_balance_hint">Enter amount</string>
+    <string name="withdraw_list_heading">Withdrawal Transactions</string>
+    <string name="withdraw_txns_type_initiate">Initiated</string>
+    <string name="withdraw_txns_type_inprogress">In Progress</string>
+    <string name="withdraw_txns_type_accepted">Accepted</string>
+    <string name="withdraw_txns_type_rejected">Rejected</string>
+    <string name="withdraw_txns_type_cancelledbyuser">Cancelled by User</string>
+    <string name="loading_withdraw_transactions">Loading Withdraw Transactions...</string>
+    <string name="raising_withdraw_request">Raising Withdraw Request...</string>
+    <string name="canceling_withdraw_request">Cancelling Withdraw Request...</string>
+    <string name="show_in_fullscreen">Show in full screen</string>
+    <string name="hide_fullscreen">Hide full screen</string>
+    <string name="withdraw_request_initiated">Your withdraw request is initiated!</string>
+    <string name="withdraw_request_inprogress">Your withdraw request is in progress!</string>
+    <string name="cancel_withdrawal_confirm">Are you sure to cancel the current Withdraw Request?</string>
+
+    <!--    ABOUT US-->
+    <string name="aboutus_heading">About</string>
+    <string name="aboutus_subheading">About us</string>
+    <string name="termandconditions_subheading">Terms &amp; Conditions</string>
+    <string name="aboutus_whoarewe">Who are we</string>
+    <string name="aboutus_whoarewe_val">We will process the request in 2 hrs and send a confirmation message after the transaction. We will process the request in 2 hrs and send a confirmation message after the transaction.</string>
+    <string name="aboutus_termsandconditionsquestion">How many player can play at one time?</string>
+    <string name="aboutus_termsandconditionsanswer">We will process the request in 2 hrs and send a confirmation message after the transaction. We will process the request in 2 hrs and send a confirmation message after the transaction.</string>
+
+    <!--    CONTACT US-->
+    <string name="contact_us_heading">Contact us</string>
+    <string name="frequently_asked_questions_subheading">Frequently asked questions</string>
+    <string name="faq_one">Rummy rules</string>
+    <string name="faq_two">Deposit related</string>
+    <string name="faq_three">Withdrawal related</string>
+    <string name="faq_four">Offers related</string>
+    <string name="faq_five">Game play related</string>
+    <string name="faqone_qustnone">How many player can play at one time?</string>
+    <string name="faqone_qustntwo">Can I play with Zero cash balance two?</string>
+    <string name="faqone_qustnthree">How many player can play at one time three?</string>
+    <string name="faqone_qustnfour">How many player can play at one time four?</string>
+    <string name="faqone_qustnfive">Can I play with Zero cash balance five?</string>
+    <string name="faqone_ansone">We will process the request in 2 hrs and send a confirmation message after the transaction. We will process the request in 2 hrs and send a confirmation message after the transaction.</string>
+    <string name="faqone_anstwo">We will process the request in 2 hrs and send a confirmation message after the transaction. We will process the request in 2 hrs and send a confirmation message after the transaction.</string>
+    <string name="faqone_ansthree">We will process the request in 2 hrs and send a confirmation message after the transaction. We will process the request in 2 hrs and send a confirmation message after the transaction.</string>
+    <string name="faqone_ansfour">We will process the request in 2 hrs and send a confirmation message after the transaction. We will process the request in 2 hrs and send a confirmation message after the transaction.</string>
+    <string name="faqone_ansfive">We will process the request in 2 hrs and send a confirmation message after the transaction. We will process the request in 2 hrs and send a confirmation message after the transaction.</string>
+    <string name="active_issues_subheading">Active issues</string>
+    <string name="issues_one">Issue how many player can play at one times how sh...</string>
+    <string name="issues_two">Issue how many player can play at one times how sh...</string>
+    <string name="message_us_subheading">Message us</string>
+    <string name="deposit_related">Deposit related</string>
+    <string name="enter_message_hint">Enter your message here</string>
+
+    <!--    TRANSACTION HISTORY-->
+    <string name="transaction_heading_history_heading">Transaction History</string>
+    <string name="balance_value">Balance ₹%1$s</string>
+    <string name="initiating_transaction">Initiating Transaction...</string>
+    <string name="transactiontype_deposit">Deposit</string>
+    <string name="transactiontype_withdrawal">Withdrawal</string>
+    <string name="transactiontype_withdrawal_reversal">Withdraw Reversal</string>
+    <string name="transactiontype_wager">Wager</string>
+    <string name="transactiontype_winnings">Winnings</string>
+    <string name="no_transactions_error">No Transactions found!</string>
+    <string name="account_label">A/C</string>
+    <string name="game_label">Game</string>
+    <string name="transaction_id_label">Txn ID</string>
+
+    <!--    ADD CASH-->
+    <string name="add_cash_heading">Add cash</string>
+    <string name="one_choose_amount">1. Choose amount</string>
+    <string name="two_choose_payment">2. Choose payment method</string>
+    <string name="price_five_hundred">₹500</string>
+    <string name="price_thousand">₹1000</string>
+    <string name="price_two_thousand">₹2000</string>
+    <string name="enter_amount">or Enter amount</string>
+    <string name="apply_offer_optional">Apply Offer (Optional)</string>
+    <string name="pay_money_from_app">Pay %1$s from %2$s</string>
+    <string name="price_fivehundred">500</string>
+    <string name="price_onethousand">1000</string>
+    <string name="price_twothousand">2000</string>
+    <string name="trxn_success_heading">₹%1$s cash succesfully added to your balance</string>
+    <string name="trxn_fail_heading">Last transaction was unsuccesfull</string>
+    <string name="trxn_fail_msg">If money has been debited from your account, contact your game.</string>
+    <string name="try_again">Try again</string>
+    <string name="back_to_lobby_in_secs">Back to Lobby in %1$s sec</string>
+
+    <!--    OFFERS ZONE-->
+    <string name="offers_zone_heading">Offers Zone</string>
+    <string name="refer_and_earn_subheading">Refer &amp; Earn</string>
+    <string name="terms_and_conditions">T&amp;C</string>
+    <string name="valid_till">Valid till %1$s</string>
+    <string name="got_it">Got it</string>
+    <string name="read_more_termsandconditions">Read more</string>
+
+    <!--    CREATE A PRIVATE TABLE-->
+    <string name="createprivatetable_heading">Create a private table</string>
+    <string name="stepone_chooseagame">1. Choose a game</string>
+    <string name="steptwo_enterbetamount">2. Enter bet amount</string>
+    <string name="stepthree_chooseatimeoptional">3. Choose a time(optional)</string>
+    <string name="private_table_msg">We will send a notification to call players to join your private table</string>
+    <string name="onezeroone_name">101</string>
+    <string name="twozeroone_name">201</string>
+    <string name="points_name">Points</string>
+    <string name="hour_hint">12</string>
+    <string name="minute_hint">45</string>
+    <string name="time_median">PM</string>
+    <string name="btn_createnow">Create now</string>
+
+    <!--    MY OPEN GAMES-->
+    <string name="open_games_heading">My open games</string>
+    <string name="fetching_open_games">Fetching your open games...</string>
+    <string name="no_open_games">You have no open games now</string>
+
+    <string name="profile_heading">Profile</string>
+    <string name="play">Play</string>
+    <string name="back_to">Back To</string>
+    <string name="close">Close</string>
+    <string name="add">Add</string>
+    <string name="recharge">Recharge</string>
+    <string name="no_available_pricepoints">No available price points!</string>
+    <string name="logout">Log Out</string>
+
+    <string name="locationerror_title">Unable to retrieve!</string>
+    <string name="locationerror_msg">Unable to retrieve location! Please, try again later.</string>
+
+    <string name="ask_location_permission_title">Josh CallBreak</string>
+    <string name="ask_location_permission_message">Need Location permission to show you the list of games.</string>
+    <string name="ask_storage_permission_message">Need Storage permission to add, save and show your Profile image. </string>
+    <string name="ask_camera_permission_message">Need Camera permission to capture and show your Profile image. </string>
+    <string name="ask_gps_permission">Enable GPS. Need GPS to show you the list of games.</string>
+    <string name="gps_needed">GPS needed to Proceed!</string>
+    <string name="got_to_permissions_to_grant_location">Go to Permissions to Grant Location Permission</string>
+    <string name="go_to_permissions_to_grant_storage">Go to Permissions to Grant Storage Permission</string>
+    <string name="grant">Grant</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="laoding_lobby">Loading lobby...</string>
+    <string name="retry_button_label">RETRY</string>
+    <string name="fetching_lobby_balance">Fetching lobby balance...</string>
+
+    <string-array name="selectprofileimgoption_array">
+        <item>Take photo</item>
+        <item>Select from gallery</item>
+    </string-array>
+
+    <string name="players_tab_label">%1$s Players</string>
+    <string name="deals_tab_label">%1$s Deals</string>
+    <string name="points_bet_amountvalue_label">₹ %1$S per point</string>
+    <string name="bet_amountvalue_label">₹ %1$S</string>
+
+    <string name="submit">Submit</string>
+    <string name="cancel_withdraw">Cancel Withdrawal</string>
+    <string name="earn_extra_heading">Earn extra\nevery game</string>
+    <string name="ok_heading">OK</string>
+    <string name="invalid_entries_heading">Invalid Entries!</string>
+    <string name="invalid_emailid">Invalid Email-ID!</string>
+    <string name="same_password_entered_error">Old and New Password is same!</string>
+    <string name="enter_new_password_error">Please, enter the new Password</string>
+    <string name="same_username_entered_error">Old and New Username is same!</string>
+    <string name="enter_new_username_error">Please, enter the new Username</string>
+    <string name="same_email_entered_error">Old and New Email is same!</string>
+    <string name="enter_new_email_error">Please, enter the new Email</string>
+    <string name="error_title">Error!</string>
+    <string name="no_offers_found_error">No Offers found!</string>
+    <string name="reached_min_bet_value">Reached Min Bet-Value!</string>
+    <string name="reached_max_bet_value">Reached Max Bet-Value!</string>
+    <string name="no_internet_err_title">No Internet!</string>
+    <string name="no_internet_err">Please, check your internet connection!</string>
+    <string name="no_otp_error">Please, enter the OTP!</string>
+    <string name="login_failed_title">Login Failed!</string>
+    <string name="server_not_responding_title">Server Error!</string>
+    <string name="cannot_withdraw">Withdraw Failed</string>
+    <string name="server_not_responding">An error occurred in the server. Please try again or report to the admin</string>
+    <string name="kyc_bank_accountneeded_error">Kyc &amp; Bank account Verification required!</string>
+    <string name="registration_failed_title">Registration Failed!</string>
+    <string name="registration_failed_msg">User unable to update! Please, try again!</string>
+    <string name="no_username_error">Please, enter Username!</string>
+    <string name="invalid_otp">Invalid OTP!</string>
+    <string name="invalid_mobile_no">Invalid Mobile Number!</string>
+    <string name="quota_exceeded">Quota Exceeded!</string>
+    <string name="invalid_user">Invalid User!</string>
+    <string name="resend_otp_msg">If you haven"'"t received the OTP in %1$s, please retry here </string>
+    <string name="reedit_phoneno_msg">Wrong Phone No.!</string>
+    <string name="something_went_wromg">Something went wrong!</string>
+    <string name="open_nav_drawer">Open Navigation Drawer</string>
+    <string name="close_nav_drawer">Close Navigation Drawer</string>
+    <string name="click_backtwice_to_close_msg">Please click BACK again to exit</string>
+    <string name="insufficient_cash_error_msg">You do not have sufficient cash to Join table</string>
+    <string name="joining_table">Joining the table..</string>
+    <string name="loading_game">Loading game...</string>
+    <string name="updating_password">Updating password...</string>
+    <string name="updating_profiledata">Updating Profile Data...</string>
+    <string name="loading_offers">Loading offers...</string>
+    <string name="loading_kyc_details">Loading KYC details...</string>
+    <string name="loading_profile_details">Loading profile details...</string>
+    <string name="loading_transactions">Loading Transactions...</string>
+    <string name="laoding_bank_acc_details">Loading Bank Account details...</string>
+    <string name="submitting_bank_acc_details">Submitting Bank Account details...</string>
+    <string name="upload_failed_heading">Upload failed!</string>
+    <string name="kyc_upload_failed_desc">Failed to upload KYC.</string>
+    <string name="mobile_no_alreadyexist_error">Mobile number already linked to %1$s</string>
+    <string name="mobile_no_not_registered">Mobile number is not registered!</string>
+    <string name="mobile_verification_successfull">Mobile Verification Successful!</string>
+    <string name="reset_password_successful">Reset Password Successful!</string>
+    <string name="reset_password_failed">Reset Password Failed!</string>
+
+    <string name="yes_confirmdialog">Yes</string>
+    <string name="no_confirmdialog">No</string>
+
+
+</resources>

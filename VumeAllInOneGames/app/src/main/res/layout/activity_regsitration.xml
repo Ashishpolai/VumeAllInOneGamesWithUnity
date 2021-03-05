@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_entermnobile"
+    android:background="@drawable/splash_screen_bg">
+
+    <include layout="@layout/heading_with_icon"/>
+
+    <ViewStub
+        android:id="@+id/register_viewstub"
+        android:inflatedId="@+id/resetpass_view"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_heading"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

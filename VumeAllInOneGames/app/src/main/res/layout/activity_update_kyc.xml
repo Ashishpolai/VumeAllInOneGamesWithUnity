@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg"
+    tools:context=".UpdateKycActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuildeLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuiudeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96998125" />
+
+    <ImageView
+        android:id="@+id/heading_laypout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/orangyyellow_bottomradius_bg"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHeight_percent="0.15"
+        />
+
+    <TextView
+        android:id="@+id/heading"
+        style="@style/LargeSubHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/pixel_19dp"
+        android:text="@string/update_kyc_heading"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:layout_marginEnd="@dimen/pixel_8dp"
+        android:src="@mipmap/left_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/heading"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.02"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/heading"
+        app:layout_constraintWidth_percent="0.08" />
+
+    <TextView
+        android:id="@+id/txtKycStatus"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/kyc_status_beingverified"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/pixel_19dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/rubikmedium"
+        android:paddingTop="@dimen/pixel_10dp"
+        android:paddingBottom="@dimen/pixel_10dp"
+        app:layout_constraintTop_toBottomOf="@+id/heading_laypout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        android:background="@color/orangy_yellow_light"
+        android:visibility="gone"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintTop_toBottomOf="@id/txtKycStatus"
+        app:layout_constraintBottom_toTopOf="@id/btn_submitkyc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftInnerGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightInnerGuiudeline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.88" />
+
+        <TextView
+            android:id="@+id/heading_choosegovernmentid"
+            style="@style/EditextLabel"
+            android:text="@string/update_kyc_subheading"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <HorizontalScrollView
+            android:id="@+id/swithcontent_layout"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@id/leftInnerGuideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.055"
+            app:layout_constraintVertical_bias="0.1"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/btn_showuploadaadhaarcontent"
+                    style="@style/LargeSubHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:text="@string/governmentid_aadhar"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/pixel_17dp"
+                    android:paddingLeft="@dimen/pixel_25dp"
+                    android:paddingRight="@dimen/pixel_25dp"
+                    android:background="@drawable/red_highroundedcorner_bg"
+                    />
+
+                <TextView
+                    android:id="@+id/btn_showuploaddrivinglicencecontent"
+                    style="@style/LargeSubHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:text="@string/governmentid_drivinglicence"
+                    android:textColor="@color/orangydark"
+                    android:layout_marginLeft="@dimen/pixel_12dp"
+                    android:textSize="@dimen/pixel_17dp"
+                    android:paddingLeft="@dimen/pixel_25dp"
+                    android:paddingRight="@dimen/pixel_25dp"
+                    android:background="@drawable/brown_highlyroundedcorner"
+                    />
+
+                <TextView
+                    android:id="@+id/btn_showuploadvoteridcontent"
+                    style="@style/LargeSubHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:text="@string/governmentid_voterid"
+                    android:textColor="@color/orangydark"
+                    android:layout_marginLeft="@dimen/pixel_12dp"
+                    android:textSize="@dimen/pixel_17dp"
+                    android:paddingLeft="@dimen/pixel_25dp"
+                    android:paddingRight="@dimen/pixel_25dp"
+                    android:background="@drawable/brown_highlyroundedcorner"
+                    />
+
+                <TextView
+                    android:id="@+id/btn_showuploadpassportcontent"
+                    style="@style/LargeSubHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:text="@string/governmentid_passport"
+                    android:textColor="@color/orangydark"
+                    android:layout_marginLeft="@dimen/pixel_12dp"
+                    android:textSize="@dimen/pixel_17dp"
+                    android:paddingLeft="@dimen/pixel_25dp"
+                    android:paddingRight="@dimen/pixel_25dp"
+                    android:layout_marginRight="@dimen/pixel_12dp"
+                    android:background="@drawable/brown_highlyroundedcorner"
+                    />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/frontview_heading"
+            style="@style/EditextLabel"
+            android:text="@string/frontof_aadhaar"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.21" />
+
+        <ImageView
+            android:id="@+id/lbl_frontkyc_edit_button"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            android:src="@mipmap/icon_edit_red"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintBottom_toBottomOf="@+id/frontview_heading"
+            app:layout_constraintStart_toEndOf="@id/frontview_heading"
+            app:layout_constraintTop_toTopOf="@id/frontview_heading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.07" />
+
+        <TextView
+            android:id="@+id/lbl_frontkyc_edit"
+            style="@style/EditextLabel"
+            android:alpha="1"
+            android:text="@string/edit"
+            android:textColor="@color/red_button"
+            app:layout_constraintBottom_toBottomOf="@+id/frontview_heading"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/frontview_heading"
+            app:layout_constraintTop_toTopOf="@id/frontview_heading"
+            app:layout_constraintEnd_toStartOf="@id/lbl_frontkyc_edit_button"
+            />
+
+        <View
+            android:id="@+id/btn_edit_frontkyc"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            android:background="@color/DrawerTransaprentBG"
+            app:layout_constraintStart_toStartOf="@id/lbl_frontkyc_edit"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_frontkyc_edit_button"
+            app:layout_constraintTop_toTopOf="@id/lbl_frontkyc_edit"
+            app:layout_constraintBottom_toBottomOf="@id/lbl_frontkyc_edit" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/grpFrontKycEdit"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            app:constraint_referenced_ids="btn_edit_frontkyc, lbl_frontkyc_edit, lbl_frontkyc_edit_button"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/front_originalimage"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            app:layout_constraintStart_toStartOf="@id/leftInnerGuideline"
+            app:layout_constraintEnd_toEndOf="@id/rightInnerGuiudeline"
+            app:layout_constraintBottom_toBottomOf="@id/btn_choosefrontphoto"
+            app:layout_constraintTop_toTopOf="@+id/front_deafultimage"
+            android:src="@mipmap/id_front"
+            android:scaleType="fitXY"
+            android:elevation="@dimen/pixel_10dp"
+            app:layout_constraintWidth_percent="0.70"
+            app:layout_constraintHeight_percent="1"
+            app:layout_constraintVertical_bias="0.05"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/front_deafultimage"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            app:layout_constraintStart_toStartOf="@id/leftInnerGuideline"
+            app:layout_constraintEnd_toEndOf="@id/rightInnerGuiudeline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@mipmap/id_front"
+            android:scaleType="fitXY"
+            app:layout_constraintWidth_percent="0.52"
+            app:layout_constraintHeight_percent="0.20"
+            app:layout_constraintVertical_bias="0.33"
+            />
+
+        <Button
+            android:id="@+id/btn_choosefrontphoto"
+            style="@style/JoshButton"
+            android:textColor="@color/red_button"
+            android:background="@mipmap/btn_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/rightInnerGuiudeline"
+            app:layout_constraintStart_toStartOf="@id/leftInnerGuideline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.52"
+            app:layout_constraintWidth_percent="0.33"
+            app:layout_constraintHeight_percent="0.065"
+            />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_1dp"
+            app:layout_constraintStart_toStartOf="@id/leftInnerGuideline"
+            app:layout_constraintEnd_toEndOf="@id/rightInnerGuiudeline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/caper_six"
+            app:layout_constraintVertical_bias="0.59"
+            />
+
+        <TextView
+            android:id="@+id/backview_heading"
+            style="@style/EditextLabel"
+            android:text="@string/backof_aadhaar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.64" />
+
+        <ImageView
+            android:id="@+id/lbl_backkyc_edit_button"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            android:src="@mipmap/icon_edit_red"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintBottom_toBottomOf="@+id/backview_heading"
+            app:layout_constraintStart_toEndOf="@id/backview_heading"
+            app:layout_constraintTop_toTopOf="@id/backview_heading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.07" />
+
+        <TextView
+            android:id="@+id/lbl_backkyc_edit"
+            style="@style/EditextLabel"
+            android:alpha="1"
+            android:text="@string/edit"
+            android:textColor="@color/red_button"
+            app:layout_constraintBottom_toBottomOf="@+id/backview_heading"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/backview_heading"
+            app:layout_constraintTop_toTopOf="@id/backview_heading"
+            app:layout_constraintEnd_toStartOf="@id/lbl_backkyc_edit_button"
+            />
+
+        <View
+            android:id="@+id/btn_edit_backkyc"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            android:background="@color/DrawerTransaprentBG"
+            app:layout_constraintStart_toStartOf="@id/lbl_backkyc_edit"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_backkyc_edit_button"
+            app:layout_constraintTop_toTopOf="@id/lbl_backkyc_edit"
+            app:layout_constraintBottom_toBottomOf="@id/lbl_backkyc_edit" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/grpBackKycEdit"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            app:constraint_referenced_ids="btn_edit_backkyc, lbl_backkyc_edit, lbl_backkyc_edit_button"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/back_originalimage"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            app:layout_constraintStart_toStartOf="@id/leftInnerGuideline"
+            app:layout_constraintEnd_toEndOf="@id/rightInnerGuiudeline"
+            app:layout_constraintBottom_toBottomOf="@id/btn_choosebackphoto"
+            app:layout_constraintTop_toTopOf="@+id/back_deafultimage"
+            android:src="@mipmap/id_back"
+            android:scaleType="fitXY"
+            android:elevation="@dimen/pixel_10dp"
+            app:layout_constraintWidth_percent="0.70"
+            app:layout_constraintHeight_percent="1"
+            app:layout_constraintVertical_bias="0.05"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/back_deafultimage"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            app:layout_constraintStart_toStartOf="@id/leftInnerGuideline"
+            app:layout_constraintEnd_toEndOf="@id/rightInnerGuiudeline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@mipmap/id_back"
+            android:scaleType="fitXY"
+            app:layout_constraintWidth_percent="0.52"
+            app:layout_constraintHeight_percent="0.20"
+            app:layout_constraintVertical_bias="0.85"
+            />
+
+        <Button
+            android:id="@+id/btn_choosebackphoto"
+            style="@style/JoshButton"
+            android:textColor="@color/red_button"
+            android:background="@mipmap/btn_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/rightInnerGuiudeline"
+            app:layout_constraintStart_toStartOf="@id/leftInnerGuideline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.965"
+            app:layout_constraintWidth_percent="0.33"
+            app:layout_constraintHeight_percent="0.065"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_submitkyc"
+        style="@style/JoshButton"
+        android:background="@drawable/button_bg"
+        android:text="@string/submit"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        android:visibility="gone"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

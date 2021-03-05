@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg"
+    tools:context=".TransactionHistoryActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuildeLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuiudeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96998125" />
+
+    <ImageView
+        android:id="@+id/heading_laypout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/orangyyellow_bottomradius_bg"
+        app:layout_constraintBottom_toBottomOf="@id/layout_balance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:id="@+id/layout_balance"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@drawable/yellow_topradius_bg"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.045"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.85" />
+
+    <TextView
+        android:id="@+id/txt_currentbalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/balance_value"
+        android:textColor="@color/white"
+        android:textSize="@dimen/pixel_17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_balance"
+        app:layout_constraintEnd_toEndOf="@id/layout_balance"
+        app:layout_constraintStart_toStartOf="@id/layout_balance"
+        app:layout_constraintTop_toTopOf="@id/layout_balance" />
+
+    <TextView
+        android:id="@+id/heading"
+        style="@style/LargeSubHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transaction_heading_history_heading"
+        android:textSize="@dimen/pixel_19dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:layout_marginEnd="@dimen/pixel_8dp"
+        android:src="@mipmap/left_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/heading"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.02"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/heading"
+        app:layout_constraintWidth_percent="0.08" />
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactions_recyclerview"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintTop_toBottomOf="@+id/heading_laypout"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.75"
+        />
+
+    <TextView
+        android:id="@+id/txt_notransactions_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubiklight"
+        android:text="@string/no_transactions_error"
+        android:textColor="@color/darkergrey"
+        android:textSize="@dimen/pixel_18dp"
+        android:background="@drawable/secondarycaper_roundedcorner_bg"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/layout_balance"
+        android:paddingTop="@dimen/pixel_8dp"
+        android:paddingBottom="@dimen/pixel_8dp"
+        android:paddingLeft="@dimen/pixel_12dp"
+        android:paddingRight="@dimen/pixel_12dp"
+        android:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

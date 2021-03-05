@@ -1,0 +1,4 @@
+rootProject.name='VumeAllInOneGame'
+include ':app'
+include ':unityLibrary'
+project (':unityLibrary').projectDir=new File('..\\UnityProject\\androidBuild\\unityLibrary')

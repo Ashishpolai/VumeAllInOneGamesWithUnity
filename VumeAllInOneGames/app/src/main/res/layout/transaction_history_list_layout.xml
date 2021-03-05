@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/splash_screen_bg"
+    >
+    <TextView
+        android:id="@+id/lbl_transactiondate"
+        style="@style/EditextLabel"
+        android:text="15 July 2020, 11:45 PM"
+        android:textSize="@dimen/pixel_15dp"
+        android:textColor="@color/secondarygreythree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="@dimen/pixel_25dp"
+        />
+
+    <TextView
+        android:id="@+id/lbl_txnid_or_tablename"
+        style="@style/EditextLabel"
+        android:text="Txn Id"
+        android:textSize="@dimen/pixel_17dp"
+        android:textColor="@color/secondarygreythree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_transactiondate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="@dimen/pixel_15dp"
+        />
+
+    <TextView
+        android:id="@+id/lbl_txnid_or_tablename_val"
+        style="@style/EditextLabel"
+        android:layout_width="@dimen/dimen_0dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:text="11123679"
+        android:textColor="@color/black"
+        android:textSize="@dimen/pixel_17dp"
+        app:layout_constraintBottom_toBottomOf="@id/lbl_txnid_or_tablename"
+        app:layout_constraintEnd_toStartOf="@+id/lbl_transaction_tyoe"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/lbl_txnid_or_tablename"
+        app:layout_constraintTop_toTopOf="@id/lbl_txnid_or_tablename"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="@dimen/pixel_4dp"
+        />
+
+    <TextView
+        android:id="@+id/lbl_accno_gamenme"
+        style="@style/EditextLabel"
+        android:text="A/C"
+        android:textSize="@dimen/pixel_17dp"
+        android:textColor="@color/secondarygreythree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_txnid_or_tablename"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+         app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="@dimen/pixel_15dp"
+        android:layout_marginBottom="@dimen/pixel_25dp"
+        />
+
+    <TextView
+        android:id="@+id/lbl_accno_gamenme_val"
+        style="@style/EditextLabel"
+        android:layout_width="@dimen/dimen_0dp"
+        android:text="********1234"
+        android:textSize="@dimen/pixel_17dp"
+        android:gravity="start"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/lbl_accno_gamenme"
+        app:layout_constraintEnd_toStartOf="@+id/lbl_transaction_amount_withsign"
+        app:layout_constraintTop_toTopOf="@id/lbl_accno_gamenme"
+        app:layout_constraintBottom_toBottomOf="@id/lbl_accno_gamenme"
+        app:layout_constraintHorizontal_bias="0"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginLeft="@dimen/pixel_4dp"
+        />
+
+
+    <TextView
+        android:id="@+id/lbl_transaction_tyoe"
+        style="@style/EditextLabel"
+        android:text="Withdrawal"
+        android:textSize="@dimen/pixel_18dp"
+        android:textColor="@color/green_four"
+        app:layout_constraintStart_toEndOf="@id/lbl_txnid_or_tablename"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lbl_txnid_or_tablename"
+        app:layout_constraintBottom_toBottomOf="@id/lbl_txnid_or_tablename"
+        app:layout_constraintHorizontal_bias="1" />
+
+    <TextView
+        android:id="@+id/lbl_transaction_amount_withsign"
+        style="@style/EditextLabel"
+        android:text="₹5000"
+        android:textSize="@dimen/pixel_18dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/lbl_accno_gamenme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lbl_accno_gamenme"
+        app:layout_constraintBottom_toBottomOf="@id/lbl_accno_gamenme"
+        app:layout_constraintHorizontal_bias="1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

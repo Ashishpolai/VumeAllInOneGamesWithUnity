@@ -1,0 +1,207 @@
+{
+  "project_info": {
+    "project_number": "916343548017",
+    "firebase_url": "https://vume-joshgames.firebaseio.com",
+    "project_id": "vume-joshgames",
+    "storage_bucket": "vume-joshgames.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916343548017:android:ab70febd9bf53fb0d593d0",
+        "android_client_info": {
+          "package_name": "com.vume.allinonegames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916343548017-n647veeb4nr8ipieigml2i4826nh4rbh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vume.allinonegames",
+            "certificate_hash": "f193a0103e816443e2e26ba58f2c2bf0b041f555"
+          }
+        },
+        {
+          "client_id": "916343548017-tv0qu94vcrjmlr6ioc9q2n5d2hjc4jbn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vume.allinonegames",
+            "certificate_hash": "66d11f57a1db4a237efcf5e1b2672733af8e14f3"
+          }
+        },
+        {
+          "client_id": "916343548017-33iljkagilit1t834d06oa4c4ja7t61f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYq7Mo84mVVkTE9xMvxCYogXgfVAsQ4iw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916343548017-33iljkagilit1t834d06oa4c4ja7t61f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916343548017:android:e60a4b4b50bdbd1ed593d0",
+        "android_client_info": {
+          "package_name": "com.vume.callbreakgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916343548017-b29vkfaufsp85kiknsi211aae299125h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vume.callbreakgame",
+            "certificate_hash": "66d11f57a1db4a237efcf5e1b2672733af8e14f3"
+          }
+        },
+        {
+          "client_id": "916343548017-jsgtslf7tph8kls4od1la5s20m2qe03u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vume.callbreakgame",
+            "certificate_hash": "6be77ccdb49dbdbe5ad6197d0d6529af454d0819"
+          }
+        },
+        {
+          "client_id": "916343548017-od9uglvc5mk2vrfgl46bq22msvgth6is.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vume.callbreakgame",
+            "certificate_hash": "22dc32fde8f08c0b9e8c79c037f7da790143c291"
+          }
+        },
+        {
+          "client_id": "916343548017-33iljkagilit1t834d06oa4c4ja7t61f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYq7Mo84mVVkTE9xMvxCYogXgfVAsQ4iw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916343548017-33iljkagilit1t834d06oa4c4ja7t61f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916343548017:android:d20833c0401d40dcd593d0",
+        "android_client_info": {
+          "package_name": "com.vume.joshgames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916343548017-0o0ke2bfd9hpu28d8oq2i3ivhua1hpth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vume.joshgames",
+            "certificate_hash": "4fb23429c9cd9ff68ee1e0f83b6969828d2c32c7"
+          }
+        },
+        {
+          "client_id": "916343548017-jinqm3g40bqd7mbtf1h1h4q9n88ofso1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vume.joshgames",
+            "certificate_hash": "66d11f57a1db4a237efcf5e1b2672733af8e14f3"
+          }
+        },
+        {
+          "client_id": "916343548017-qn1a4jr28h5eqk7o57k6quga4gfp6j2r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vume.joshgames",
+            "certificate_hash": "6be77ccdb49dbdbe5ad6197d0d6529af454d0819"
+          }
+        },
+        {
+          "client_id": "916343548017-33iljkagilit1t834d06oa4c4ja7t61f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYq7Mo84mVVkTE9xMvxCYogXgfVAsQ4iw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916343548017-33iljkagilit1t834d06oa4c4ja7t61f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916343548017:android:9ed76707f9393e4cd593d0",
+        "android_client_info": {
+          "package_name": "com.vume.vumefantasyleague"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916343548017-2tk9cq952fu70aji093kurl4tjkaqsai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vume.vumefantasyleague",
+            "certificate_hash": "66d11f57a1db4a237efcf5e1b2672733af8e14f3"
+          }
+        },
+        {
+          "client_id": "916343548017-dnuj6j1cpq6302ff8pd336rapc3edphl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vume.vumefantasyleague",
+            "certificate_hash": "22dc32fde8f08c0b9e8c79c037f7da790143c291"
+          }
+        },
+        {
+          "client_id": "916343548017-33iljkagilit1t834d06oa4c4ja7t61f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYq7Mo84mVVkTE9xMvxCYogXgfVAsQ4iw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916343548017-33iljkagilit1t834d06oa4c4ja7t61f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

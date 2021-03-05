@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">जोश रम्मी</string>
+    <string name="app_version">एप्लिकेशन वेरीज़न : %1$s</string>
+    <string name="action_settings">समायोजन</string>
+    <string name="loading_text">लोड हो रहा है ...</string>
+
+    <string name = "update_available_alert">An update is available for you</string>
+
+    <string name="heading_registerforrummy">जोश रम्मी के लिए रजिस्टर करें</string>
+
+</resources>

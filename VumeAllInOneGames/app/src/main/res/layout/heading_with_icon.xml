@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/rubikbold"
+        android:gravity="center"
+        android:text="@string/login_screen_msg"
+        android:textColor="@color/orangydark"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <ImageView
+        android:id="@+id/imgv_logo"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/logo_mark_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topGuildeLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintWidth_percent="0.20"
+        app:layout_constraintHeight_percent="0.15"
+        android:alpha="0.4"
+        android:translationZ="@dimen/pixel_90dp"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuildeLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuiudeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+</merge>

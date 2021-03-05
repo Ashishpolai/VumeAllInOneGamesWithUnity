@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval" >
+            <size android:height="@dimen/pixel_5dp"/>
+            <solid android:color="@color/disabled" />
+        </shape>
+    </item>
+    <item android:bottom="2dp">
+        <shape  xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval" >
+            <solid android:color="@color/disabled"/>
+        </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/victoriacolor_plus"
+        android:bottom="20dp"
+        android:left="20dp"
+        android:right="20dp"
+        android:top="20dp"/>
+</layer-list>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg"
+    tools:context=".LoginActivity">
+
+    <include layout="@layout/heading_with_icon"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:id="@+id/mainLayout"
+        app:layout_constraintTop_toBottomOf="@+id/tv_heading"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+        >
+        <TextView
+            android:id="@+id/lbl_username"
+            style="@style/EditextLabel"
+            android:text="@string/username_label"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/edt_username"
+            style="@style/EditextStyle"
+            android:background="@drawable/edittext_bg"
+            android:maxLength="20"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_username"
+            app:layout_constraintVertical_bias="0.015"/>
+
+        <TextView
+            android:id="@+id/lbl_password"
+            style="@style/EditextLabel"
+            android:text="@string/password_label"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/edt_username"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            style="@style/EditextStyle"
+            android:background="@drawable/edittext_bg"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_password"
+            app:layout_constraintVertical_bias="0.015" />
+
+        <ImageView
+            android:id="@+id/btn_togglepasswordvisibility"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            app:layout_constraintTop_toTopOf="@+id/edt_password"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_password"
+            app:layout_constraintEnd_toEndOf="@+id/edt_password"
+            app:layout_constraintWidth_percent="0.1"
+            app:layout_constraintHeight_percent="0.065"
+            android:src="@mipmap/password_invisible"
+            android:layout_marginRight="@dimen/pixel_12dp"
+            />
+
+        <TextView
+            android:id="@+id/lbl_forgotpass"
+            style="@style/SubTextMediumLabel"
+            android:text="@string/forgot_password"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_resetpass"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/btn_resetpass"
+            style="@style/SubTextMediumLabel"
+            android:gravity="center"
+            android:text="@string/reset_password"
+            app:autoSizeTextType="uniform"
+            android:alpha="1"
+            android:textColor="@color/orangydark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toEndOf="@+id/lbl_forgotpass"
+            app:layout_constraintTop_toBottomOf="@id/edt_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/JoshButton"
+            android:background="@drawable/button_bg"
+            android:text="@string/login_label"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="@+id/lbl_forgotpass"
+            app:layout_constraintTop_toBottomOf="@id/lbl_forgotpass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            />
+
+        <TextView
+            android:id="@+id/lbl_remeberme"
+            style="@style/SubTextMediumLabel"
+            android:text="@string/remember_me_login"
+            android:alpha="1"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBaseline_toBaselineOf="@+id/switch_rememberme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Switch
+            android:id="@+id/switch_rememberme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pixel_0dp"
+            android:checked="true"
+            android:fontFamily="@font/rubikregular"
+            android:gravity="center"
+            android:switchMinWidth="@dimen/pixel_40dp"
+            android:layout_marginLeft="@dimen/pixel_8dp"
+            android:thumb="@drawable/switch_thumb_selector"
+            android:track="@drawable/switch_track_selector"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.042"
+            app:layout_constraintHeight_min="@dimen/pixel_27dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lbl_remeberme"
+            app:layout_constraintTop_toBottomOf="@id/btn_login"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <View
+            android:id="@+id/view_dividerleft"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_1dp"
+            android:background="@color/orangydark"
+            android:alpha="0.6"
+            app:layout_constraintEnd_toStartOf="@+id/lbl_newtojoshrummy"
+            app:layout_constraintLeft_toLeftOf="@+id/leftGuideline"
+            app:layout_constraintTop_toTopOf="@+id/lbl_newtojoshrummy"
+            app:layout_constraintBottom_toBottomOf="@id/lbl_newtojoshrummy"
+            app:layout_constraintWidth_percent="1" />
+
+        <TextView
+            android:id="@+id/lbl_newtojoshrummy"
+            style="@style/SubTextSmallLabel"
+            android:gravity="center"
+            android:paddingLeft="@dimen/pixel_8dp"
+            android:paddingRight="@dimen/pixel_8dp"
+            android:text="@string/new_to_joshrummy"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_remeberme"
+            app:layout_constraintVertical_bias="0.45"
+            android:alpha="0.6"
+            />
+
+        <View
+            android:id="@+id/view_dividerright"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_1dp"
+            android:background="@color/orangydark"
+            android:alpha="0.6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lbl_newtojoshrummy"
+            app:layout_constraintTop_toTopOf="@+id/lbl_newtojoshrummy"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_newtojoshrummy"
+            app:layout_constraintWidth_percent="1" />
+
+        <Button
+            android:id="@+id/btn_register"
+            style="@style/JoshButton"
+            android:textColor="@color/red_button"
+            android:background="@drawable/button_transparent_bg"
+            android:text="@string/register_label"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_newtojoshrummy"
+            app:layout_constraintVertical_bias="0.65"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

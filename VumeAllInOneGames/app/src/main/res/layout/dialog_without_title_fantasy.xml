@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/caper_fullradius_bg">
+    <LinearLayout
+        android:id="@+id/error_msg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/pixel_30dp"
+        >
+        <TextView
+            android:id="@+id/txt_errordialog_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikregular"
+            android:textColor="@color/orangydark"
+            android:textSize="@dimen/pixel_18dp"
+            app:autoSizeTextType="uniform"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_mid"
+        android:layout_width="@dimen/pixel_1dp"
+        android:layout_height="@dimen/pixel_1dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/DrawerTransaprentBG"
+        />
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/pixel_38dp"
+        android:text="@string/close"
+        android:layout_below="@+id/error_msg_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/pixel_30dp"
+        android:layout_toLeftOf="@+id/txt_mid"
+        android:layout_marginRight="@dimen/pixel_8dp"
+        android:layout_marginLeft="@dimen/pixel_8dp"
+        android:layout_alignLeft="@+id/error_msg_layout"
+        style="@style/JoshButton"
+        android:textColor="@color/red_button"
+        android:background="@drawable/button_transparent_bg"
+        />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:background="@drawable/flat_red_button_bg"
+        style="@style/JoshButton"
+        android:layout_alignTop="@+id/btn_left"
+        android:layout_alignBottom="@id/btn_left"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/txt_mid"
+        android:layout_alignRight="@id/error_msg_layout"
+        android:text="@string/recharge"
+        android:layout_marginLeft="@dimen/pixel_8dp"
+        android:layout_marginRight="@dimen/pixel_8dp"
+        android:textColor="@color/white"
+        />
+</RelativeLayout>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReferralsAndOffersActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuildeLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuiudeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96998125" />
+
+    <ImageView
+        android:id="@+id/heading_laypout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/orangyyellow_bottomradius_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/heading"
+        style="@style/LargeSubHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offers_zone_heading"
+        android:textSize="@dimen/pixel_19dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:layout_marginEnd="@dimen/pixel_8dp"
+        android:src="@mipmap/left_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/heading"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.02"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/heading"
+        app:layout_constraintWidth_percent="0.08" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/offers_recyclerview"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintBottom_toTopOf="@id/round_bg"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/heading_laypout" />
+
+    <TextView
+        android:id="@+id/no_offers_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:gravity="center"
+        android:letterSpacing="0.3"
+        android:text="@string/no_offers_found_error"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/round_bg"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/heading_laypout" />
+
+    <ImageView
+        android:id="@+id/round_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/topradius_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/space"
+        app:layout_constraintVertical_bias="1" />
+
+    <View
+        android:id="@+id/space"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintBottom_toTopOf="@+id/referral_ques"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_holdanddrag"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/holdanddrag_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/space"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/referral_ques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:gravity="left"
+        android:text="@string/refer_and_earn_subheading"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toTopOf="@+id/referral_msg"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/round_bg" />
+
+    <TextView
+        android:id="@+id/referral_msg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:fontFamily="@font/rubikregular"
+        android:gravity="left"
+        android:text="@string/referral_msg"
+        android:textColor="@color/orangydark"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/sharereferral_layout"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/referral_ques" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sharereferral_layout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/playmore_bg"
+        app:layout_constraintBottom_toTopOf="@+id/btn_share_whatsapp"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.060"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/heading_laypout"
+        app:layout_constraintVertical_bias="0.95">
+
+        <TextView
+            android:id="@+id/referral_code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikmedium"
+            android:gravity="center"
+            android:letterSpacing="0.3"
+            android:text="@string/playmore"
+            android:textColor="@color/orangydark"
+            android:textSize="@dimen/pixel_18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_copyreferralcode"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            android:src="@mipmap/icon_copy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.7"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.1" />
+
+        <ImageView
+            android:id="@+id/btn_sharereferralcode"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            android:src="@mipmap/icon_share"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.7"
+            app:layout_constraintHorizontal_bias="0.78"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/btn_share_whatsapp"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/whatsapp_share"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <ImageView
+        android:id="@+id/btn_share_messenger"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/messenger_share"
+        app:layout_constraintBottom_toBottomOf="@id/btn_share_whatsapp"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/btn_share_whatsapp"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <ImageView
+        android:id="@+id/btn_share_telegrem"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/telegram_share"
+        app:layout_constraintBottom_toBottomOf="@id/btn_share_whatsapp"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/btn_share_whatsapp"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <ImageView
+        android:id="@+id/btn_share"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/share_icon"
+        app:layout_constraintBottom_toBottomOf="@id/btn_share_whatsapp"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/btn_share_whatsapp"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/sharereferral_layout_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="btn_share, btn_share_whatsapp,
+, btn_share_messenger, btn_share_telegrem, sharereferral_layout, referral_ques, referral_msg,
+btn_holdanddrag, space, round_bg" />
+
+    <!--    TERMS AND CONDITIONS-->
+    <ImageView
+        android:id="@+id/offers_termsandconditions_round_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/topradius_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/padding_termsandconditions"
+        app:layout_constraintVertical_bias="1" />
+
+    <View
+        android:id="@+id/padding_termsandconditions"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintBottom_toTopOf="@id/offer_termsandconditions_title"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@id/rightGuiudeline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="1" />
+
+    <TextView
+        android:id="@+id/offer_termsandconditions_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:gravity="left"
+        android:text="@string/got_it"
+        android:textColor="@color/black"
+        android:textSize="@dimen/pixel_19dp"
+        app:layout_constraintBottom_toTopOf="@+id/offer_termsandconditions_desc"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/topGuildeLine"
+        app:layout_constraintVertical_bias="0.94" />
+
+    <TextView
+        android:id="@+id/offer_termsandconditions_desc"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikregular"
+        android:gravity="left"
+        android:text="&#8226;  Refer your friends and for every friend joining you get 15 additional days of commission free play"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_readmore_termsandconditions"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/topGuildeLine"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <TextView
+        android:id="@+id/btn_readmore_termsandconditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikregular"
+        android:gravity="left"
+        android:text="@string/read_more_termsandconditions"
+        android:textColor="@color/hyperlink_blue"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_gotit"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/topGuildeLine"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <TextView
+        android:id="@+id/btn_gotit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:gravity="left"
+        android:text="@string/got_it"
+        android:textColor="@color/red_button"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/topGuildeLine"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/offers_termsandconcditions_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="btn_gotit, offer_termsandconditions_desc, offer_termsandconditions_title,
+        offers_termsandconcditions_layout, offers_termsandconditions_round_bg, padding_termsandconditions, btn_readmore_termsandconditions" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash_screen_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lbl_otpsentheading"
+            style="@style/SubHeading"
+            android:text="@string/enter_otp_heading"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15" />
+
+        <TextView
+            android:id="@+id/lbl_enterotp"
+            style="@style/EditextLabel"
+            android:text="@string/label_enterotp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_otpsentheading"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/edt_otp"
+            style="@style/EditextStyle"
+            android:background="@drawable/edittext_bg"
+            android:maxLength="10"
+            android:inputType="phone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_enterotp"
+            app:layout_constraintVertical_bias="0.015" />
+
+        <TextView
+            android:id="@+id/lbl_timer"
+            style="@style/SubTextMediumLabel"
+            android:text="0:20"
+            android:textColor="@color/base"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBaseline_toBaselineOf="@+id/lbl_resendotp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_resendotp"
+            style="@style/SubTextMediumLabel"
+            android:text="@string/resendotp"
+            android:textColor="@color/orangydark"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_otp"
+            app:layout_constraintVertical_bias="0.015"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/btn_submitotp"
+            style="@style/JoshButton"
+            android:background="@drawable/button_bg"
+            android:text="@string/submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_timer"
+            app:layout_constraintVertical_bias="0.10" />
+
+        <ImageView
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            android:layout_marginEnd="@dimen/pixel_8dp"
+            android:src="@mipmap/left_arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_edtmobileno"
+            app:layout_constraintHeight_percent="0.02"
+            app:layout_constraintRight_toLeftOf="@+id/btn_edtmobileno"
+            app:layout_constraintTop_toTopOf="@+id/btn_edtmobileno"
+            app:layout_constraintWidth_percent="0.08" />
+
+        <TextView
+            android:id="@+id/btn_edtmobileno"
+            style="@style/EditextLabel"
+            android:text="@string/edit_mobile_no"
+            android:alpha="1"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_submitotp"
+            app:layout_constraintVertical_bias="0.12" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

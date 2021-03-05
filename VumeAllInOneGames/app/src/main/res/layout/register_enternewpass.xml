@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/lbl_setnewpassword"
+        style="@style/SubHeading"
+        android:text="@string/heading_set_password"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        />
+
+
+    <TextView
+        android:id="@+id/lbl_new_password"
+        style="@style/EditextLabel"
+        android:text="@string/label_new_pass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_setnewpassword"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <EditText
+        android:id="@+id/edt_new_password"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/edittext_bg"
+        android:fontFamily="@font/rubikregular"
+        android:maxLength="20"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/pixel_8dp"
+        android:paddingRight="@dimen/pixel_8dp"
+        android:textColor="@color/orangydark"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintHeight_max="@dimen/pixel_55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_new_password"
+        app:layout_constraintVertical_bias="0.015"
+        app:layout_constraintWidth_percent="1" />
+
+    <ImageView
+        android:id="@+id/btn_togglepasswordvisibility"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintTop_toTopOf="@+id/edt_new_password"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_new_password"
+        app:layout_constraintEnd_toEndOf="@+id/edt_new_password"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintHeight_percent="0.065"
+        android:src="@mipmap/password_invisible"
+        android:layout_marginRight="@dimen/pixel_12dp"
+        />
+
+    <TextView
+        android:id="@+id/lbl_confirmpassword"
+        style="@style/EditextLabel"
+        android:text="@string/label_confirm_pass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/edt_new_password"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/edt_confirmpassword"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/edittext_bg"
+        android:fontFamily="@font/rubikregular"
+        android:maxLength="20"
+        android:inputType="textVisiblePassword"
+        android:paddingLeft="@dimen/pixel_8dp"
+        android:paddingRight="@dimen/pixel_8dp"
+        android:textColor="@color/orangydark"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_max="@dimen/pixel_55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintTop_toBottomOf="@id/lbl_confirmpassword"
+        app:layout_constraintVertical_bias="0.015"
+        app:layout_constraintWidth_percent="1" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/JoshButton"
+        android:background="@drawable/button_bg"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@id/edt_confirmpassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.20" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:id="@+id/player_selection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:orientation="horizontal"
+        android:weightSum="10.5"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView
+            android:id="@+id/player_team_indicator"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/pixel_12dp"
+            android:paddingTop="@dimen/pixel_6dp"
+            android:paddingBottom="@dimen/pixel_6dp"
+            android:layout_weight="2"
+            android:src="@mipmap/cricket_player_icon"
+            android:background="@color/primary_light_blue"
+            />
+
+        <LinearLayout
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="3.8"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/pixel_2dp"
+            android:paddingRight="@dimen/pixel_2dp"
+            >
+            <TextView
+                android:id="@+id/player_name"
+                style="@style/SubTextMediumLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Virendar Sehwag"
+                android:fontFamily="@font/rubikbold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_14dp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:autoSizeTextType="uniform"
+                />
+            <TextView
+                android:id="@+id/player_team_points_heading"
+                style="@style/SubTextMediumLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MRATHA | 0 Pts"
+                android:fontFamily="@font/rubikbold"
+                android:textColor="@color/darkgrey"
+                android:textSize="@dimen/dimen_14dp"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/selected_percent_heading"
+            style="@style/SubTextMediumLabel"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:text="72%"
+            android:fontFamily="@font/rubikbold"
+            android:textStyle="bold"
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/pixel_13dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.2"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/credits_heading"
+                style="@style/SubTextMediumLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="8.5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/pixel_16dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/player_selection_indicator"
+                android:layout_width="@dimen/pixel_30dp"
+                android:layout_height="@dimen/pixel_30dp"
+                android:src="@mipmap/add_player"
+                android:layout_marginLeft="@dimen/pixel_8dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pixel_1dp"
+        android:background="@color/primary_light_blue"
+        android:layout_below="@id/player_selection_layout"
+        />
+
+    <View
+        android:id="@+id/unselectedBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pixel_0dp"
+        android:layout_alignTop="@id/player_selection_layout"
+        android:layout_alignBottom="@id/player_selection_layout"
+        android:background="@color/DrawerTransaprentWhiteBG_50"
+        android:visibility="visible"
+        />
+
+</RelativeLayout>
+
+

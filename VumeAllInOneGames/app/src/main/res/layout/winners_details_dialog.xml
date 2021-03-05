@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/caper_fullradius_bg">
+
+    <TextView
+        android:id="@+id/winners_prize_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/winners_prize_amount"
+        android:gravity="center"
+        android:layout_weight="1"
+        style="@style/LargeSubHeading"
+        android:textSize="@dimen/pixel_19dp"
+        android:textColor="@color/black"
+        android:padding="@dimen/pixel_4dp"
+        android:layout_marginTop="@dimen/pixel_8dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/heading_column"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/pixel_8dp"
+        android:layout_marginRight="@dimen/pixel_8dp"
+        android:layout_marginBottom="@dimen/pixel_8dp"
+        android:layout_below="@id/winners_prize_heading"
+        android:weightSum="3"
+        >
+        <TextView
+            android:id="@+id/rank_heading"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rank"
+            android:gravity="center"
+            android:layout_weight="1.1"
+            style="@style/LargeSubHeading"
+            android:textSize="@dimen/pixel_16dp"
+            android:textColor="@color/white"
+            android:padding="@dimen/pixel_4dp"
+            android:background="@color/darkgrey"
+            />
+
+        <View
+            android:layout_width="@dimen/pixel_2dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/prizeamount_heading"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/prize_amount"
+            android:gravity="center"
+            android:layout_weight="1.9"
+            style="@style/LargeSubHeading"
+            android:textSize="@dimen/pixel_16dp"
+            android:textColor="@color/white"
+            android:padding="@dimen/pixel_4dp"
+            android:background="@color/darkgrey"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/prizeamount_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/heading_column"
+        android:layout_marginLeft="@dimen/pixel_8dp"
+        android:layout_marginRight="@dimen/pixel_8dp"
+        android:layout_marginBottom="@dimen/pixel_8dp"
+        />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flat_red_button_bg"
+        style="@style/FantasyButton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/prizeamount_recyclerview"
+        android:text="@string/recharge"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/pixel_8dp"
+        />
+</RelativeLayout>

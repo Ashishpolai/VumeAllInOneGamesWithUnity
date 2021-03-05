@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg"
+    tools:context=".RegisterProfileDetailsActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuildeLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuiudeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_profilelayout"
+        android:layout_width="@dimen/pixel_100dp"
+        android:layout_height="@dimen/pixel_100dp"
+        app:cardCornerRadius="50dp"
+        app:cardBackgroundColor="@color/primary"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toBottomOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="0"
+        >
+        <ImageView
+            android:id="@+id/img_profileavatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/roundbg_withborder"
+            />
+    </androidx.cardview.widget.CardView>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/img_profileavatar"-->
+<!--        android:layout_width="@dimen/pixel_0dp"-->
+<!--        android:layout_height="@dimen/pixel_0dp"-->
+<!--        android:src="@drawable/roundbg_withborder"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"-->
+<!--        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"-->
+<!--        app:layout_constraintRight_toLeftOf="@+id/rightGuiudeline"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/topGuildeLine"-->
+<!--        app:layout_constraintVertical_bias="0"-->
+<!--        app:layout_constraintWidth_percent="0.27"-->
+<!--        app:layout_constraintHeight_percent="0.14"-->
+<!--        />-->
+
+
+    <ImageView
+        android:id="@+id/img_avatarmush"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@drawable/icon_mushprofile"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/img_avatargoggle"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/img_profilelayout"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <ImageView
+        android:id="@+id/img_avatarteen"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@drawable/icon_teenprofile"
+        app:layout_constraintBottom_toBottomOf="@+id/img_avatarspecs"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_avatarspecs"
+        app:layout_constraintTop_toTopOf="@+id/img_avatarspecs"
+        app:layout_constraintVertical_bias="0.188"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <ImageView
+        android:id="@+id/img_avatarspecs"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@drawable/icon_specsprofile"
+        app:layout_constraintBottom_toBottomOf="@+id/img_avatargoggle"
+        app:layout_constraintEnd_toStartOf="@+id/img_avatarteen"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_avatargoggle"
+        app:layout_constraintTop_toTopOf="@+id/img_avatargoggle"
+        app:layout_constraintVertical_bias="0.189"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <ImageView
+        android:id="@+id/img_avatargoggle"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@drawable/icon_googleprofile"
+        app:layout_constraintBottom_toBottomOf="@+id/img_avatarmush"
+        app:layout_constraintEnd_toStartOf="@+id/img_avatarspecs"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_avatarmush"
+        app:layout_constraintTop_toTopOf="@+id/img_avatarmush"
+        app:layout_constraintVertical_bias="0.189"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <TextView
+        android:id="@+id/lbl_username"
+        style="@style/EditextLabel"
+        android:text="@string/username_label"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/img_avatarmush"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/edittext_bg"
+        android:fontFamily="@font/rubikregular"
+        android:maxLength="20"
+        android:inputType="text"
+        android:paddingLeft="@dimen/pixel_8dp"
+        android:paddingRight="@dimen/pixel_8dp"
+        android:textColor="@color/orangydark"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintHeight_max="@dimen/pixel_55dp"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintHeight_percent="0.060"
+        app:layout_constraintTop_toBottomOf="@id/lbl_username"
+        app:layout_constraintVertical_bias="0.015"
+        app:layout_constraintWidth_percent="1" />
+
+    <TextView
+        android:id="@+id/lbl_emailid"
+        style="@style/EditextLabel"
+        android:text="@string/label_emailid"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/edt_username"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <EditText
+        android:id="@+id/edt_emailid"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/edittext_bg"
+        android:fontFamily="@font/rubikregular"
+        android:maxLength="60"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="@dimen/pixel_8dp"
+        android:paddingRight="@dimen/pixel_8dp"
+        android:textColor="@color/orangydark"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintHeight_max="@dimen/pixel_55dp"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintHeight_percent="0.060"
+        app:layout_constraintTop_toBottomOf="@id/lbl_emailid"
+        app:layout_constraintVertical_bias="0.015"
+        app:layout_constraintWidth_percent="1" />
+
+    <TextView
+        android:id="@+id/lbl_dateofborth"
+        style="@style/EditextLabel"
+        android:text="@string/label_dateofbirth"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/edt_emailid"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/edt_dateofbirth"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/edittext_bg"
+        android:fontFamily="@font/rubikregular"
+        android:maxLength="20"
+        android:inputType="date"
+        android:paddingLeft="@dimen/pixel_8dp"
+        android:paddingRight="@dimen/pixel_8dp"
+        android:textColor="@color/orangydark"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintHeight_max="@dimen/pixel_55dp"
+        app:layout_constraintHeight_percent="0.060"
+        app:layout_constraintTop_toBottomOf="@id/lbl_dateofborth"
+        app:layout_constraintVertical_bias="0.015"
+        app:layout_constraintWidth_percent="1" />
+
+    <Button
+        android:id="@+id/btn_submitregisterdetails"
+        style="@style/JoshButton"
+        android:background="@drawable/button_bg"
+        android:text="@string/submit"
+        app:layout_constraintHeight_percent="0.060"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@id/edt_dateofbirth"
+        app:layout_constraintVertical_bias="0.60"
+        />
+
+    <TextView
+        android:id="@+id/lbl_remeberme"
+        style="@style/SubTextMediumLabel"
+        android:text="@string/remember_me"
+        android:alpha="1"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_rememberme"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.042"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintWidth_percent="0.30" />
+
+    <Switch
+        android:id="@+id/switch_rememberme"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/pixel_0dp"
+        android:checked="true"
+        android:fontFamily="@font/rubikregular"
+        android:gravity="center"
+        android:switchMinWidth="@dimen/pixel_40dp"
+        android:layout_marginLeft="@dimen/pixel_8dp"
+        android:thumb="@drawable/switch_thumb_selector"
+        android:track="@drawable/switch_track_selector"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.042"
+        app:layout_constraintHeight_min="@dimen/pixel_25dp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_remeberme"
+        app:layout_constraintTop_toBottomOf="@id/btn_submitregisterdetails"
+        app:layout_constraintVertical_bias="0.34" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuildeLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuiudeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <ImageView
+        android:id="@+id/top_layout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@drawable/victoria_bottomradius_bg"
+        app:layout_constraintBottom_toBottomOf="@id/layout_onilnenumbers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/white_back_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/img_cashbalance_bg"
+        app:layout_constraintHeight_percent="0.03"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toTopOf="@id/img_cashbalance_bg"
+        app:layout_constraintWidth_percent="0.06" />
+
+    <TextView
+        android:id="@+id/txt_gamename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/twozeroone_rummy"
+        android:textColor="@color/white"
+        android:textSize="@dimen/pixel_20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintEnd_toStartOf="@id/img_cashbalance_bg"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="@id/btn_back"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <ImageView
+        android:id="@+id/img_cashbalance_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@drawable/orangyyellow_roundedcorner_bg"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toBottomOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent="0.42" />
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="₹ 0.0"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_cashbalance_bg"
+        app:layout_constraintEnd_toEndOf="@id/img_cashbalance_bg"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@id/img_cashbalance_bg"
+        app:layout_constraintTop_toTopOf="@id/img_cashbalance_bg"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/txt_pricelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/cash_balance"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_cashbalance_bg"
+        app:layout_constraintEnd_toEndOf="@id/img_cashbalance_bg"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/txt_price"
+        app:layout_constraintTop_toBottomOf="@id/txt_price"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <ImageView
+        android:id="@+id/btn_addcash"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/green_round_button_bg"
+        app:layout_constraintBottom_toBottomOf="@id/img_cashbalance_bg"
+        app:layout_constraintEnd_toEndOf="@id/img_cashbalance_bg"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintStart_toEndOf="@+id/txt_pricelabel"
+        app:layout_constraintTop_toTopOf="@id/img_cashbalance_bg"
+        app:layout_constraintWidth_percent="0.11" />
+
+    <ImageView
+        android:id="@+id/layout_onilnenumbers"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@drawable/yellow_topradius_bg"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.045"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/img_cashbalance_bg"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <TextView
+        android:id="@+id/txt_onlinenumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/online_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_onilnenumbers"
+        app:layout_constraintEnd_toEndOf="@id/layout_onilnenumbers"
+        app:layout_constraintStart_toStartOf="@id/layout_onilnenumbers"
+        app:layout_constraintTop_toTopOf="@id/layout_onilnenumbers" />
+
+    <ImageView
+        android:id="@+id/grey_rounded"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_roundedcorner40_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.057"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/layout_onilnenumbers"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintWidth_percent="0.36" />
+
+    <ImageView
+        android:id="@+id/green_rounded_sixplayers"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/lightgreen_roundedcorner40_bg"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/grey_rounded"
+        app:layout_constraintEnd_toEndOf="@id/grey_rounded"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/grey_rounded"
+        app:layout_constraintTop_toTopOf="@+id/grey_rounded"
+        app:layout_constraintWidth_percent="0.19" />
+
+    <ImageView
+        android:id="@+id/green_rounded_twoplayers"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/lightgreen_roundedcorner40_bg"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/grey_rounded"
+        app:layout_constraintEnd_toEndOf="@id/grey_rounded"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/grey_rounded"
+        app:layout_constraintTop_toTopOf="@+id/grey_rounded"
+        app:layout_constraintWidth_percent="0.19" />
+
+    <TextView
+        android:id="@+id/txt_twoplayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="2"
+        android:textColor="@color/grey_four"
+        android:textSize="@dimen/pixel_16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/grey_rounded"
+        app:layout_constraintEnd_toEndOf="@id/grey_rounded"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@id/grey_rounded"
+        app:layout_constraintTop_toTopOf="@id/grey_rounded"
+        />
+
+    <ImageView
+        android:id="@+id/img_twoplayersordeals"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_twoplayers_grey"
+        app:layout_constraintStart_toEndOf="@id/txt_twoplayers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_twoplayers"
+        app:layout_constraintBottom_toBottomOf="@id/txt_twoplayers"
+        app:layout_constraintWidth_percent="0.07"
+        app:layout_constraintHeight_percent="0.03"
+        app:layout_constraintHorizontal_bias="0.03"
+        />
+
+    <TextView
+        android:id="@+id/txt_sixplayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="6"
+        android:textColor="@color/white"
+        android:textSize="@dimen/pixel_16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/grey_rounded"
+        app:layout_constraintEnd_toEndOf="@id/grey_rounded"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="@id/grey_rounded"
+        app:layout_constraintTop_toTopOf="@id/grey_rounded" />
+
+    <ImageView
+        android:id="@+id/img_sixplayersorthreedeals"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_multiplayers"
+        app:layout_constraintStart_toEndOf="@id/txt_sixplayers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_sixplayers"
+        app:layout_constraintBottom_toBottomOf="@id/txt_sixplayers"
+        app:layout_constraintWidth_percent="0.07"
+        app:layout_constraintHeight_percent="0.03"
+        app:layout_constraintHorizontal_bias="0.03"
+        />
+
+    <View
+        android:id="@+id/switch_players"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="@+id/grey_rounded"
+        app:layout_constraintEnd_toEndOf="@id/grey_rounded"
+        app:layout_constraintTop_toTopOf="@+id/grey_rounded"
+        app:layout_constraintBottom_toBottomOf="@+id/grey_rounded"
+        android:background="@color/DrawerTransaprentBG"
+        />
+
+    <!--    SIX PLAYER PRICE CARDS-->
+
+    <ImageView
+        android:id="@+id/card_fiverupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fiverupees"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/card_tenrupees"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/grey_rounded"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintWidth_percent="0.30"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_tenrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_tenrupees"
+        app:layout_constraintBottom_toBottomOf="@+id/card_fiverupees"
+        app:layout_constraintEnd_toStartOf="@+id/card_twentyrupees"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintStart_toEndOf="@+id/card_fiverupees"
+        app:layout_constraintTop_toTopOf="@+id/card_fiverupees"
+        app:layout_constraintVertical_bias="0.118"
+        app:layout_constraintWidth_percent="0.30"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_twentyrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_twentyrupees"
+        app:layout_constraintBottom_toBottomOf="@+id/card_tenrupees"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintStart_toEndOf="@+id/card_tenrupees"
+        app:layout_constraintTop_toTopOf="@+id/card_tenrupees"
+        app:layout_constraintVertical_bias="0.118"
+        app:layout_constraintWidth_percent="0.30"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_twentyfiverupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_twentyfiverupees"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/card_fiftyrupees"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/card_fiverupees"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintWidth_percent="0.30"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_fiftyrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fifetyrupees"
+        app:layout_constraintBottom_toBottomOf="@+id/card_twentyfiverupees"
+        app:layout_constraintEnd_toStartOf="@+id/card_hundredrupees"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_twentyfiverupees"
+        app:layout_constraintTop_toTopOf="@+id/card_twentyfiverupees"
+        app:layout_constraintVertical_bias="0.385"
+        app:layout_constraintWidth_percent="0.30"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_hundredrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_hundredrupees"
+        app:layout_constraintBottom_toBottomOf="@+id/card_fiftyrupees"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_fiftyrupees"
+        app:layout_constraintTop_toTopOf="@+id/card_fiftyrupees"
+        app:layout_constraintVertical_bias="0.409"
+        app:layout_constraintWidth_percent="0.30"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_twofiftyrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_twohundredfifty"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/card_fivehundredrupees"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/card_twentyfiverupees"
+        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintWidth_percent="0.30"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_fivehundredrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fivehundred"
+        app:layout_constraintBottom_toBottomOf="@+id/card_twofiftyrupees"
+        app:layout_constraintEnd_toStartOf="@+id/card_onethousandrupees"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_twofiftyrupees"
+        app:layout_constraintTop_toTopOf="@+id/card_twofiftyrupees"
+        app:layout_constraintVertical_bias="0.385"
+        app:layout_constraintWidth_percent="0.30"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_onethousandrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_onethousand"
+        app:layout_constraintBottom_toBottomOf="@+id/card_fivehundredrupees"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_fivehundredrupees"
+        app:layout_constraintTop_toTopOf="@+id/card_fivehundredrupees"
+        app:layout_constraintVertical_bias="0.409"
+        app:layout_constraintWidth_percent="0.30"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_twothousandrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_twothousand"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/card_fivethousandrupees"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/card_twofiftyrupees"
+        app:layout_constraintVertical_bias="0.471"
+        app:layout_constraintWidth_percent="0.30"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_fivethousandrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fivethousand"
+        app:layout_constraintBottom_toBottomOf="@+id/card_twothousandrupees"
+        app:layout_constraintEnd_toStartOf="@+id/card_tenthousandrupees"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_twothousandrupees"
+        app:layout_constraintTop_toTopOf="@+id/card_twothousandrupees"
+        app:layout_constraintVertical_bias="0.385"
+        app:layout_constraintWidth_percent="0.30"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_tenthousandrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_tenthousand"
+        app:layout_constraintBottom_toBottomOf="@+id/card_fivethousandrupees"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_fivethousandrupees"
+        app:layout_constraintTop_toTopOf="@+id/card_fivethousandrupees"
+        app:layout_constraintVertical_bias="0.409"
+        app:layout_constraintWidth_percent="0.30"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_sixplayer_pricecards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="card_fiverupees, card_tenrupees, card_fiftyrupees,
+                card_hundredrupees, card_fivehundredrupees, card_fivethousandrupees,
+                 card_onethousandrupees, card_tenthousandrupees, card_twentyfiverupees,
+                card_twentyrupees, card_twofiftyrupees, card_twothousandrupees"
+        android:visibility="visible"
+        />
+
+    <!--    TWO PLAYER CARD LAYOUT-->
+    <ImageView
+        android:id="@+id/card_twoplayer_fiverupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fiverupees"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.135"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/grey_rounded"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintWidth_percent="0.40"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_twoplayer_tenrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_tenrupees"
+        app:layout_constraintBottom_toBottomOf="@+id/card_twoplayer_fiverupees"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.135"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/card_twoplayer_fiverupees"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintWidth_percent="0.40"
+        android:tint="@color/DrawerTransaprentBG_60"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/card_twoplayer_twentyfiverupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_twentyfiverupees"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.135"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/card_twoplayer_fiverupees"
+        app:layout_constraintVertical_bias="0.065"
+        app:layout_constraintWidth_percent="0.40"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_twoplayer_fiftyrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fifetyrupees"
+        app:layout_constraintBottom_toBottomOf="@+id/card_twoplayer_twentyfiverupees"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.135"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/card_twoplayer_twentyfiverupees"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintWidth_percent="0.40"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_twoplayer_twofiftyrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_twohundredfifty"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.135"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/card_twoplayer_twentyfiverupees"
+        app:layout_constraintVertical_bias="0.07"
+        app:layout_constraintWidth_percent="0.40"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_twoplayer_fivehundredrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fivehundred"
+        app:layout_constraintBottom_toBottomOf="@+id/card_twoplayer_twofiftyrupees"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.135"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/card_twoplayer_twofiftyrupees"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintWidth_percent="0.40"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_twoplayer_twothousandrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_twothousand"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.135"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/card_twoplayer_twofiftyrupees"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintWidth_percent="0.40"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <ImageView
+        android:id="@+id/card_twoplayer_fivethousandrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fivethousand"
+        app:layout_constraintBottom_toBottomOf="@+id/card_twoplayer_twothousandrupees"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.135"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/card_twoplayer_twothousandrupees"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintWidth_percent="0.40"
+        android:tint="@color/DrawerTransaprentBG_60"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_twoplayer_pricecards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="card_twoplayer_fiftyrupees,
+        card_twoplayer_fivehundredrupees, card_twoplayer_fiverupees,
+        card_twoplayer_twentyfiverupees, card_twoplayer_fivethousandrupees,
+         card_twoplayer_twothousandrupees, card_twoplayer_tenrupees,
+         card_twoplayer_twofiftyrupees"
+        android:visibility="visible"
+        />
+
+<!--    BUYIN DIALOG-->
+
+    <View
+        android:id="@+id/buyindialog_transparent_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@color/DrawerTransaprentBG_70"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/buyindialog_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/paddinglayout"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/caper_topradius_bg"
+        android:paddingTop="@dimen/pixel_8dp"
+        />
+
+    <View
+        android:id="@+id/paddinglayout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_gamenameval"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintHeight_percent="0.06"
+        />
+
+    <TextView
+        android:id="@+id/txt_gamenameval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="201 Rummy"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_gamelabel"
+        app:layout_constraintEnd_toEndOf="@id/btn_playgame"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@id/txt_gamelabel"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.96"
+        />
+
+    <TextView
+        android:id="@+id/txt_playersval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="6"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_playerslabel"
+        app:layout_constraintEnd_toEndOf="@id/btn_playgame"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@id/txt_playerslabel"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.96"
+        />
+
+    <TextView
+        android:id="@+id/txt_betamountval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="₹ 100"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_betamountlabel"
+        app:layout_constraintEnd_toEndOf="@id/btn_playgame"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@id/txt_betamountlabel"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.96"
+        />
+
+    <TextView
+        android:id="@+id/txt_gamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/gamelabel"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_playerslabel"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@id/grey_rounded"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.96"
+        />
+
+    <TextView
+        android:id="@+id/txt_playerslabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/playerslabel"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_betamountlabel"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@id/grey_rounded"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.96"
+        />
+
+    <TextView
+        android:id="@+id/txt_betamountlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/betamountlabel"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancelbuyin"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@id/grey_rounded"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.91"
+        />
+
+   <Button
+       android:id="@+id/btn_cancelbuyin"
+       android:layout_width="@dimen/pixel_0dp"
+       android:layout_height="@dimen/pixel_0dp"
+       style="@style/JoshButton"
+       android:text="@string/cancel"
+       android:textColor="@color/red_button"
+       android:background="@drawable/button_transparent_bg"
+       app:layout_constraintStart_toStartOf="@id/leftGuideline"
+       app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+       app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+       app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+       app:layout_constraintWidth_percent="0.39"
+       app:layout_constraintHeight_percent="0.075"
+       app:layout_constraintHorizontal_bias="0.07"
+       app:layout_constraintVertical_bias="1"
+       />
+
+    <Button
+        android:id="@+id/btn_playgame"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        style="@style/JoshButton"
+        android:text="@string/play"
+        android:background="@drawable/flat_red_button_bg"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintBottom_toBottomOf="@id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@+id/btn_cancelbuyin"
+        app:layout_constraintWidth_percent="0.39"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintHorizontal_bias="0.93"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_buyinconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="btn_playgame, btn_cancelbuyin, txt_betamountlabel, txt_betamountval,
+        txt_playerslabel, txt_playersval, txt_gamelabel, txt_gamenameval, buyindialog_bg, buyindialog_transparent_bg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

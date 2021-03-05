@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/pixel_12dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginBottom="@dimen/pixel_8dp"
+    >
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@mipmap/list_bg"-->
+<!--        />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/match_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UAE Premier League, T10"
+            android:textColor="@color/darkgrey"
+            android:layout_weight="1"
+            style="@style/SubTabTextAppearance"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/pixel_4dp"
+            android:maxLines="1"
+            android:maxLength="45"
+            android:ellipsize="end"
+            />
+
+        <ImageView
+            android:id="@+id/opponent_one_icon"
+            android:layout_width="@dimen/pixel_60dp"
+            android:layout_height="@dimen/pixel_60dp"
+            android:src="@mipmap/app_icon"
+            android:layout_marginLeft="@dimen/pixel_12dp"
+            android:layout_marginTop="@dimen/pixel_12dp"
+            android:layout_marginBottom="@dimen/pixel_12dp"
+            android:layout_alignParentLeft="true"
+            />
+        <ImageView
+            android:id="@+id/opponent_two_icon"
+            android:layout_width="@dimen/pixel_60dp"
+            android:layout_height="@dimen/pixel_60dp"
+            android:src="@mipmap/app_icon"
+            android:layout_marginRight="@dimen/pixel_12dp"
+            android:layout_marginTop="@dimen/pixel_12dp"
+            android:layout_marginBottom="@dimen/pixel_12dp"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/opponent_one_name"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="wrap_content"
+            android:text="chennai super kings"
+            android:textColor="@color/black"
+            style="@style/OpponentNameAppearance"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/vs_icon"
+            android:layout_alignBottom="@id/vs_icon"
+            android:layout_toLeftOf="@+id/vs_icon"
+            android:layout_toRightOf="@+id/opponent_one_icon"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/pixel_8dp"
+            android:layout_marginRight="@dimen/pixel_8dp"
+            android:autoSizeTextType="uniform"
+            />
+
+        <ImageView
+            android:id="@+id/vs_icon"
+            android:layout_width="@dimen/pixel_25dp"
+            android:layout_height="@dimen/pixel_25dp"
+            android:layout_below="@+id/match_title"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/vs_icon"
+            android:layout_marginTop="@dimen/pixel_12dp"
+            />
+
+        <TextView
+            android:id="@+id/opponent_two_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mumbai Indians"
+            android:textColor="@color/black"
+            style="@style/OpponentNameAppearance"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/vs_icon"
+            android:layout_alignBottom="@id/vs_icon"
+            android:layout_toRightOf="@+id/vs_icon"
+            android:layout_toLeftOf="@id/opponent_two_icon"
+            android:layout_marginLeft="@dimen/pixel_8dp"
+            android:layout_marginRight="@dimen/pixel_8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/match_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starts in: 10h 55m 3s"
+            android:textColor="@color/maroon"
+            style="@style/TimerTextAppearance"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/opponent_one_name"
+            android:layout_marginTop="@dimen/pixel_10dp"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

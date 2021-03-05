@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:id="@+id/divider_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <View
+        android:id="@+id/small_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pixel_2dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/grey"
+        />
+
+    <View
+        android:id="@+id/big_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pixel_16dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/grey"
+        android:visibility="gone"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/player_selection_heading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_layout"
+        android:orientation="horizontal"
+        android:weightSum="10.5"
+        >
+
+        <RelativeLayout
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="2.5"
+            >
+            <ImageView
+                android:id="@+id/player_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pixel_80dp"
+                android:src="@mipmap/cricket_player_avatar"
+                />
+
+            <ImageView
+                android:id="@+id/player_info"
+                android:layout_width="@dimen/pixel_18dp"
+                android:layout_height="@dimen/pixel_18dp"
+                android:src="@mipmap/info"
+                android:layout_margin="@dimen/pixel_4dp"
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/player_avatar"
+                    >
+                    <TextView
+                        android:id="@+id/teamshortname"
+                        style="@style/LargeSubHeading"
+                        android:layout_width="@dimen/pixel_0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="CSK"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/pixel_12dp"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:autoSizeTextType="uniform"
+                        android:paddingTop="@dimen/pixel_1dp"
+                        android:paddingBottom="@dimen/pixel_1dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/playertypeshortname"
+                        style="@style/LargeSubHeading"
+                        android:layout_width="@dimen/pixel_0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="WK"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/pixel_12dp"
+                        android:layout_weight="4"
+                        android:background="@color/mustard"
+                        android:autoSizeTextType="uniform"
+                        android:paddingTop="@dimen/pixel_1dp"
+                        android:paddingBottom="@dimen/pixel_1dp"
+                        />
+                </LinearLayout>
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/pixel_8dp"
+        android:paddingRight="@dimen/pixel_8dp"
+        >
+        <TextView
+            android:id="@+id/player_name"
+            style="@style/LargeSubHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="A Singhdeo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/pixel_16dp"
+            android:paddingTop="@dimen/pixel_8dp"
+            android:paddingBottom="@dimen/pixel_8dp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:autoSizeTextType="uniform"
+            />
+
+        <TextView
+            android:id="@+id/player_totalpoints"
+            style="@style/SubTextMediumLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="136"
+            android:textColor="@color/black"
+            android:textSize="@dimen/pixel_16dp"
+            android:paddingBottom="@dimen/pixel_8dp"
+            android:autoSizeTextType="uniform"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:gravity="center"
+    >
+        <TextView
+            android:id="@+id/captain_select"
+            android:fontFamily="@font/rubikmedium"
+            android:layout_width="@dimen/pixel_40dp"
+            android:layout_height="@dimen/pixel_40dp"
+            android:gravity="center"
+            android:text="@string/captain_short"
+            android:textColor="@color/black"
+            android:textSize="@dimen/pixel_15dp"
+            android:paddingTop="@dimen/pixel_8dp"
+            android:paddingBottom="@dimen/pixel_8dp"
+            android:layout_weight="2"
+            android:background="@drawable/roundbg_withgreyborder"
+            />
+
+        <TextView
+            android:id="@+id/captain_selected_percent"
+            style="@style/SubTextMediumLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0.75%"
+            android:textColor="@color/black"
+            android:textSize="@dimen/pixel_15dp"
+            android:paddingTop="@dimen/pixel_8dp"
+            android:paddingBottom="@dimen/pixel_8dp"
+            android:layout_weight="2"
+            />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/vicecaptain_select"
+                android:fontFamily="@font/rubikmedium"
+                android:layout_width="@dimen/pixel_40dp"
+                android:layout_height="@dimen/pixel_40dp"
+                android:gravity="center"
+                android:text="@string/vicecaptain_short"
+                android:textColor="@color/darkgrey"
+                android:textSize="@dimen/pixel_15dp"
+                android:paddingTop="@dimen/pixel_8dp"
+                android:paddingBottom="@dimen/pixel_8dp"
+                android:layout_weight="2"
+                android:background="@drawable/roundbg_withgreyborder"
+                />
+
+            <TextView
+                android:id="@+id/vicecaptain_selected_percent"
+                style="@style/SubTextMediumLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0.82%"
+                android:textColor="@color/black"
+                android:textSize="@dimen/pixel_15dp"
+                android:paddingTop="@dimen/pixel_8dp"
+                android:paddingBottom="@dimen/pixel_8dp"
+                android:layout_weight="2"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+

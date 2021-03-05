@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/pixel_4dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginBottom="@dimen/pixel_8dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/contest_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mega Contest"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/SubTabTextAppearance"
+            android:background="@color/mustard"
+            android:textColor="@color/white"
+            android:padding="@dimen/pixel_4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.05"
+            />
+
+        <TextView
+            android:id="@+id/contest_prize_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹5 Lakhs"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/LargeSubHeading"
+            android:textSize="@dimen/pixel_19dp"
+            android:textColor="@color/black"
+            android:padding="@dimen/pixel_4dp"
+            app:layout_constraintTop_toBottomOf="@+id/contest_tag"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintVertical_bias="0.1"
+            />
+
+        <ImageView
+            android:id="@+id/icon_plus"
+            android:layout_width="@dimen/dimen_15dp"
+            android:layout_height="@dimen/pixel_15dp"
+            android:src="@drawable/victoriacolor_plus"
+            app:layout_constraintLeft_toRightOf="@+id/contest_prize_money"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/contest_prize_money"
+            app:layout_constraintBottom_toBottomOf="@id/contest_prize_money"
+            app:layout_constraintHorizontal_bias="0.02"
+            />
+
+        <TextView
+            android:id="@+id/contest_extra_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pixel_0dp"
+            android:text="Win Samsung J2 Core"
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/dimen_14dp"
+            android:gravity="center"
+            android:padding="@dimen/pixel_4dp"
+            android:fontFamily="@font/rubikregular"
+            app:layout_constraintLeft_toRightOf="@+id/icon_plus"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/contest_prize_money"
+            app:layout_constraintBottom_toBottomOf="@id/contest_prize_money"
+            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintVertical_bias="0"
+            />
+
+        <TextView
+            android:id="@+id/contest_entry_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pixel_0dp"
+            android:text="₹25"
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/pixel_17dp"
+            android:gravity="center"
+            android:padding="@dimen/pixel_4dp"
+            android:fontFamily="@font/rubikregular"
+            app:layout_constraintLeft_toRightOf="@+id/contest_extra_prize"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/contest_prize_money"
+            app:layout_constraintBottom_toBottomOf="@id/contest_prize_money"
+            app:layout_constraintHorizontal_bias="0.90"
+            app:layout_constraintVertical_bias="0"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/prize_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/contest_entry_fee"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.1"
+            app:cardElevation="@dimen/dimen_10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/pixel_2dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/contest_first_prize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/first"
+                    android:drawablePadding="@dimen/pixel_2dp"
+                    android:fontFamily="@font/rubikregular"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pixel_20dp"
+                    android:paddingTop="@dimen/pixel_4dp"
+                    android:paddingRight="@dimen/pixel_20dp"
+                    android:paddingBottom="@dimen/pixel_2dp"
+                    android:text="₹5,00,000"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="@dimen/pixel_12dp"
+                    app:layout_constraintBottom_toBottomOf="@id/contest_prize_money"
+                    app:layout_constraintHorizontal_bias="0.02"
+                    app:layout_constraintLeft_toRightOf="@+id/icon_plus"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/contest_prize_money"
+                    app:layout_constraintVertical_bias="0" />
+
+                <View
+                    android:layout_width="@dimen/pixel_1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/darkgrey"
+                    />
+
+                <TextView
+                    android:id="@+id/contest_total_winners"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Winners : 15,000"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="@dimen/pixel_12dp"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/pixel_4dp"
+                    android:paddingBottom="@dimen/pixel_4dp"
+                    android:paddingLeft="@dimen/pixel_20dp"
+                    android:paddingRight="@dimen/pixel_8dp"
+                    android:fontFamily="@font/rubikregular"
+                    app:layout_constraintLeft_toRightOf="@+id/icon_plus"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/contest_prize_money"
+                    app:layout_constraintBottom_toBottomOf="@id/contest_prize_money"
+                    app:layout_constraintHorizontal_bias="0.02"
+                    app:layout_constraintVertical_bias="0"
+                    />
+
+                <ImageView
+                    android:id="@+id/contest_total_winners_dropdown"
+                    android:layout_width="@dimen/pixel_12dp"
+                    android:layout_height="@dimen/pixel_12dp"
+                    android:src="@mipmap/dropdown_indicator"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/pixel_8dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_join"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            android:background="@drawable/green_button_bg"
+            app:layout_constraintTop_toTopOf="@id/prize_layout"
+            app:layout_constraintBottom_toBottomOf="@id/prize_layout"
+            app:layout_constraintLeft_toRightOf="@id/prize_layout"
+            app:layout_constraintRight_toRightOf="@id/contest_entry_fee"
+            android:text="@string/join"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rubikbold"
+            android:textColor="@color/white"
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintHorizontal_bias="0.95"
+            />
+
+        <TextView
+            android:id="@+id/contest_teamjoined_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teams Joined: 1117/25000"
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/pixel_11dp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/pixel_8dp"
+            android:padding="@dimen/pixel_4dp"
+            android:fontFamily="@font/rubikregular"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/contest_entry_fee"
+            app:layout_constraintTop_toBottomOf="@+id/prize_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0"
+            />
+
+        <ProgressBar
+            android:id="@+id/contest_teams_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pixel_6dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/contest_teams_progressbar"
+            app:layout_constraintTop_toBottomOf="@+id/contest_teamjoined_details"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

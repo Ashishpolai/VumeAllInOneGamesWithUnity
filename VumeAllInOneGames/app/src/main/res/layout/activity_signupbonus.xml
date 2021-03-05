@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash_screen_bg">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuildeLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuiudeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/rubikbold"
+        android:gravity="center"
+        android:text="@string/congratulations"
+        android:textColor="@color/orangydark"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.046"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bonus_ticket"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_heading"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomGuideline"
+        android:background="@mipmap/signupbonus_bg"
+        app:layout_constraintHeight_percent="0.19"
+        app:layout_constraintVertical_bias="0.07"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintWidth_percent="0.85"
+            app:layout_constraintHeight_percent="0.75"
+            android:background="@drawable/button_transparent_white_bg"
+            >
+
+            <TextView
+                android:id="@+id/freeplay_days"
+                android:layout_width="@dimen/pixel_0dp"
+                android:layout_height="@dimen/pixel_0dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/rubikbold"
+                android:gravity="center"
+                android:text="@string/thirtydays"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/freeplay_days_msg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/view_divider"
+                app:layout_constraintHeight_percent="0.55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.25" />
+
+            <TextView
+                android:id="@+id/freeplay_days_msg"
+                android:layout_width="@dimen/pixel_0dp"
+                android:layout_height="@dimen/pixel_0dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/rubikmedium"
+                android:gravity="left"
+                android:text="@string/thirtydays_msg"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/freeplay_days"
+                app:layout_constraintStart_toEndOf="@+id/freeplay_days"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/view_divider"
+                app:layout_constraintWidth_percent="0.6"
+                app:layout_constraintHeight_percent="0.4"/>
+
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="@dimen/pixel_0dp"
+                android:layout_height="@dimen/pixel_1dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.7"
+                app:layout_constraintWidth_percent="1" />
+
+            <TextView
+                android:layout_width="@dimen/pixel_0dp"
+                android:layout_height="@dimen/pixel_0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/thirtydays_paymoreearnmore"
+                android:gravity="center"
+                android:fontFamily="@font/rubikregular"
+                android:textColor="@color/white"
+                android:autoSizeTextType="uniform"
+                app:layout_constraintWidth_percent="0.95"
+                app:layout_constraintHeight_percent="0.20"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/round_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/topradius_bg"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/space" />
+
+    <View
+        android:id="@+id/space"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/referral_ques"
+        app:layout_constraintHeight_percent="0.04"
+        />
+
+    <TextView
+        android:id="@+id/referral_ques"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toTopOf="@+id/round_bg"
+        app:layout_constraintBottom_toTopOf="@+id/referral_msg"
+        android:text="@string/referral_question"
+        app:autoSizeTextType="uniform"
+        android:gravity="left"
+        android:fontFamily="@font/rubikmedium"
+        android:textColor="@color/orangydark"
+        app:layout_constraintHeight_percent="0.05"
+        />
+
+    <TextView
+        android:id="@+id/referral_msg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toBottomOf="@+id/referral_ques"
+        app:layout_constraintBottom_toTopOf="@+id/sharereferral_layout"
+        android:text="@string/referral_msg"
+        android:gravity="left"
+        android:fontFamily="@font/rubikregular"
+        android:textColor="@color/orangydark"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintHeight_percent="0.07"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sharereferral_layout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/playmore_bg"
+        app:layout_constraintHeight_percent="0.060"
+        app:layout_constraintVertical_bias="0.85"
+        app:layout_constraintTop_toBottomOf="@+id/bonus_ticket"
+        app:layout_constraintBottom_toTopOf="@+id/btn_proceedfromsignupbonus"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"
+            android:text="@string/playmore"
+            android:textSize="@dimen/pixel_18dp"
+            android:gravity="center"
+            android:fontFamily="@font/rubikmedium"
+            android:textColor="@color/orangydark"
+            android:letterSpacing="0.3"
+            />
+
+        <ImageView
+            android:id="@+id/btn_copyreferralcode"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@mipmap/icon_copy"
+            app:layout_constraintHeight_percent="0.7"
+            app:layout_constraintWidth_percent="0.1"
+            app:layout_constraintHorizontal_bias="0.96"
+            />
+
+        <ImageView
+            android:id="@+id/btn_sharereferralcode"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@mipmap/icon_share"
+            app:layout_constraintHeight_percent="0.7"
+            app:layout_constraintWidth_percent="0.1"
+            app:layout_constraintHorizontal_bias="0.78"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_proceedfromsignupbonus"
+        style="@style/JoshButton"
+        android:background="@drawable/button_transparent_bg"
+        android:text="@string/proceed_buttonlabel"
+        android:textColor="@color/red_button"
+        app:layout_constraintHeight_percent="0.060"
+        app:layout_constraintTop_toBottomOf="@+id/bonus_ticket"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

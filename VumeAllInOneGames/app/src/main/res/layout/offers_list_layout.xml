@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/splash_screen_bg"
+    >
+    <TextView
+        android:id="@+id/lbl_offer_msg"
+        style="@style/LargeSubHeading"
+        android:text="Deposit now and get 10% bonus"
+        android:textSize="@dimen/pixel_18dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="@dimen/pixel_25dp"
+        />
+
+    <TextView
+        android:id="@+id/lbl_offer_valid_till"
+        style="@style/EditextLabel"
+        android:text="Valid till 04, May"
+        android:textSize="@dimen/pixel_18dp"
+        android:textColor="@color/secondarygreythree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_offer_msg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="@dimen/pixel_15dp"
+        />
+
+    <TextView
+        android:id="@+id/lbl_termandconditions"
+        style="@style/EditextLabel"
+        android:text="@string/terms_and_conditions"
+        android:textSize="@dimen/pixel_18dp"
+        android:textColor="@color/red_button"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/lbl_offer_valid_till"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lbl_offer_valid_till"
+        app:layout_constraintBottom_toBottomOf="@id/lbl_offer_valid_till"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintVertical_bias="0"
+        android:alpha="1"
+        />
+
+    <Button
+        android:id="@+id/btn_offercodecopy"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        style="@style/JoshButton"
+        android:background="@drawable/button_transparent_bg"
+        android:text="WED1234"
+        android:textSize="@dimen/pixel_17dp"
+        android:paddingLeft="@dimen/pixel_45dp"
+        android:paddingRight="@dimen/pixel_45dp"
+        android:textColor="@color/red_button"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_offer_valid_till"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/pixel_15dp"
+        />
+
+    <View
+        android:layout_width="@dimen/pixel_1dp"
+        android:layout_height="@dimen/pixel_15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_offercodecopy"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

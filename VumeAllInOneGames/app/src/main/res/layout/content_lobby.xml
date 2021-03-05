@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuildeLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuiudeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <ImageView
+        android:id="@+id/top_layout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@drawable/victoria_bottomradius_bg"
+        app:layout_constraintBottom_toBottomOf="@id/layout_additionalearnings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/hamburger_menu"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/hamburger_icon"
+        app:layout_constraintBottom_toBottomOf="@id/img_profilelayout"
+        app:layout_constraintHeight_percent="0.03"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toTopOf="@id/img_profilelayout"
+        app:layout_constraintWidth_percent="0.08" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_profilelayout"
+        android:layout_width="@dimen/pixel_80dp"
+        android:layout_height="@dimen/pixel_80dp"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toRightOf="@+id/hamburger_menu"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toBottomOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="0"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:id="@+id/img_profileavatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_mushprofile" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="₹ 0.0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/pixel_20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_profilelayout"
+        app:layout_constraintEnd_toStartOf="@id/btn_addcash"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_profilelayout"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/txt_pricelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/cash_balance"
+        android:textColor="@color/white"
+        android:textSize="@dimen/pixel_16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_profilelayout"
+        app:layout_constraintEnd_toStartOf="@id/btn_addcash"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_price"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/btn_addcash"
+        style="@style/JoshButton"
+        android:background="@drawable/greenbutton_normal_withshadow"
+        android:text="@string/menu_addcash"
+        android:textColor="@color/white"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_profilelayout"
+        app:layout_constraintEnd_toEndOf="@id/layout_additionalearnings"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/img_profilelayout"
+        app:layout_constraintWidth_percent="0.27" />
+
+    <ImageView
+        android:id="@+id/layout_additionalearnings"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@drawable/yellow_topradius_bg"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.045"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/img_profilelayout"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintWidth_percent="0.85" />
+
+    <TextView
+        android:id="@+id/txt_additionalearnings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/additional_earnings"
+        android:textColor="@color/white"
+        android:textSize="@dimen/pixel_17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_additionalearnings"
+        app:layout_constraintEnd_toEndOf="@id/layout_additionalearnings"
+        app:layout_constraintStart_toStartOf="@id/layout_additionalearnings"
+        app:layout_constraintTop_toTopOf="@id/layout_additionalearnings" />
+
+    <!--    RUMMY GAME CONTENT-->
+
+    <ImageView
+        android:id="@+id/card_101rummy"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_101pool"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/layout_additionalearnings"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintWidth_percent="0.42" />
+
+    <ImageView
+        android:id="@+id/card_201rummy"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_201pool"
+        app:layout_constraintBottom_toBottomOf="@id/card_101rummy"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/card_101rummy"
+        app:layout_constraintTop_toBottomOf="@id/layout_additionalearnings"
+        app:layout_constraintTop_toTopOf="@id/card_101rummy"
+        app:layout_constraintWidth_percent="0.42" />
+
+    <ImageView
+        android:id="@+id/card_pointsrummy"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_pointrummy"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/card_101rummy"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintWidth_percent="0.42" />
+
+    <ImageView
+        android:id="@+id/card_dealsrummy"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_dealsrummy"
+        app:layout_constraintBottom_toBottomOf="@id/card_pointsrummy"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/card_pointsrummy"
+        app:layout_constraintWidth_percent="0.42" />
+
+    <ImageView
+        android:id="@+id/card_playwithfriends"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_playwithfriends"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/card_pointsrummy"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintWidth_percent="0.42" />
+
+    <ImageView
+        android:id="@+id/card_tournaments"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_tournaments"
+        app:layout_constraintBottom_toBottomOf="@id/card_playwithfriends"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/card_playwithfriends"
+        app:layout_constraintWidth_percent="0.42" />
+
+    <TextView
+        android:id="@+id/label_favourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="Favourites"
+        android:textColor="@color/victoria"
+        android:textSize="@dimen/pixel_19dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/card_playwithfriends"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_fav_one"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/turquoise_roundedcorner_bg"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintEnd_toStartOf="@+id/card_fav_two"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/label_favourites"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintWidth_percent="0.28"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_bias="0.5"
+        >
+        <TextView
+            android:id="@+id/label_favone_gamename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikmedium"
+            android:text="201 Pool"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/pixel_13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintVertical_bias="0.15"
+            />
+
+        <TextView
+            android:id="@+id/label_favone_noof_playerordeals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikmedium"
+            android:text="6"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/pixel_15dp"
+            app:layout_constraintStart_toStartOf="@id/label_favone_gamename"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.85"
+            app:layout_constraintHorizontal_bias="0"
+            />
+
+        <ImageView
+            android:id="@+id/img_favone_noofplayersordeals"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_multiplayers"
+            app:layout_constraintStart_toEndOf="@id/label_favone_noof_playerordeals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/label_favone_noof_playerordeals"
+            app:layout_constraintBottom_toBottomOf="@id/label_favone_noof_playerordeals"
+            app:layout_constraintWidth_percent="0.16"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHorizontal_bias="0.05"
+            />
+
+        <TextView
+            android:id="@+id/label_favone_rupees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikmedium"
+            android:text="₹10"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/pixel_15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/label_favone_noof_playerordeals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="@id/label_favone_gamename"
+            app:layout_constraintTop_toTopOf="@+id/label_favone_noof_playerordeals"
+            app:layout_constraintVertical_bias="0.85" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_fav_two"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/turquoise_roundedcorner_bg"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintEnd_toStartOf="@+id/card_fav_three"
+        app:layout_constraintStart_toEndOf="@+id/card_fav_one"
+        app:layout_constraintTop_toBottomOf="@id/label_favourites"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintWidth_percent="0.28"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_bias="0.5"
+        >
+        <TextView
+            android:id="@+id/label_favtwo_gamename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikmedium"
+            android:text="101 Pool"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/pixel_13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintVertical_bias="0.15"
+            />
+
+        <TextView
+            android:id="@+id/label_favtwo_noof_playerordeals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikmedium"
+            android:text="2"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/pixel_15dp"
+            app:layout_constraintStart_toStartOf="@id/label_favtwo_gamename"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.85"
+            app:layout_constraintHorizontal_bias="0"
+            />
+
+        <ImageView
+            android:id="@+id/img_favtwo_nofoplayersordeals"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_twoplayers"
+            app:layout_constraintStart_toEndOf="@id/label_favtwo_noof_playerordeals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/label_favtwo_noof_playerordeals"
+            app:layout_constraintBottom_toBottomOf="@id/label_favtwo_noof_playerordeals"
+            app:layout_constraintWidth_percent="0.16"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHorizontal_bias="0.05"
+            />
+
+        <TextView
+            android:id="@+id/label_favtwo_rupees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikmedium"
+            android:text="₹25"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/pixel_15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_favtwo_nofoplayersordeals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="@id/img_favtwo_nofoplayersordeals"
+            app:layout_constraintTop_toTopOf="@+id/img_favtwo_nofoplayersordeals"
+            app:layout_constraintVertical_bias="0.85" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_fav_three"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/turquoise_roundedcorner_bg"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toEndOf="@+id/card_fav_two"
+        app:layout_constraintTop_toBottomOf="@id/label_favourites"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintWidth_percent="0.28"
+        app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintHorizontal_bias="0.5"
+        >
+        <TextView
+            android:id="@+id/label_favthree_gamename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikmedium"
+            android:text="Points\nRummy"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/pixel_13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintVertical_bias="0.15"
+            />
+
+        <TextView
+            android:id="@+id/label_favthree_noof_playerordeals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikmedium"
+            android:text="6"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/pixel_15dp"
+            app:layout_constraintStart_toStartOf="@id/label_favthree_gamename"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.85"
+            app:layout_constraintHorizontal_bias="0"
+            />
+
+        <ImageView
+            android:id="@+id/img_favthree_noofplayersordeals"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_multiplayers"
+            app:layout_constraintStart_toEndOf="@id/label_favthree_noof_playerordeals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/label_favthree_noof_playerordeals"
+            app:layout_constraintBottom_toBottomOf="@id/label_favthree_noof_playerordeals"
+            app:layout_constraintWidth_percent="0.16"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHorizontal_bias="0.05"
+            />
+
+        <TextView
+            android:id="@+id/label_favthree_rupees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikmedium"
+            android:text="₹50"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/pixel_15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/label_favthree_noof_playerordeals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="@id/label_favthree_gamename"
+            app:layout_constraintTop_toTopOf="@+id/label_favthree_noof_playerordeals"
+            app:layout_constraintVertical_bias="0.85" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_myopengames"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_opengames"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/card_fav_one"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintHeight_percent="0.07"
+        />
+
+    <View
+        android:id="@+id/midLine"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintWidth_percent="0.05"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/layout_rummylobby_content"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:constraint_referenced_ids="midLine, img_myopengames, card_fav_one,
+        card_fav_two, card_fav_three, label_favourites, card_tournaments,
+        card_playwithfriends, card_dealsrummy, card_pointsrummy, card_201rummy,
+        card_101rummy"
+        android:visibility="gone"
+        />
+
+    <!--    CALLBREAK GAMES CONTENT-->
+    <ImageView
+        android:id="@+id/card_fiverupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fiverupees"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/card_tenrupees"
+        app:layout_constraintHeight_percent="0.112"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/layout_additionalearnings"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.30"
+        />
+
+    <ImageView
+        android:id="@+id/card_tenrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_tenrupees"
+        app:layout_constraintBottom_toBottomOf="@+id/card_fiverupees"
+        app:layout_constraintEnd_toStartOf="@+id/card_twentyrupees"
+        app:layout_constraintStart_toEndOf="@+id/card_fiverupees"
+        app:layout_constraintTop_toTopOf="@+id/card_fiverupees"
+        app:layout_constraintWidth_percent="0.30"
+        />
+
+    <ImageView
+        android:id="@+id/card_twentyrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_twentyrupees"
+        app:layout_constraintBottom_toBottomOf="@+id/card_tenrupees"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintStart_toEndOf="@+id/card_tenrupees"
+        app:layout_constraintTop_toTopOf="@+id/card_tenrupees"
+        app:layout_constraintWidth_percent="0.30"
+        />
+
+    <ImageView
+        android:id="@+id/card_twentyfiverupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_twentyfiverupees"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/card_fiftyrupees"
+        app:layout_constraintHeight_percent="0.112"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/card_fiverupees"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintWidth_percent="0.30"
+        />
+
+    <ImageView
+        android:id="@+id/card_fiftyrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fifetyrupees"
+        app:layout_constraintBottom_toBottomOf="@+id/card_twentyfiverupees"
+        app:layout_constraintEnd_toStartOf="@+id/card_hundredrupees"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_twentyfiverupees"
+        app:layout_constraintTop_toTopOf="@+id/card_twentyfiverupees"
+        app:layout_constraintWidth_percent="0.30"
+        />
+
+    <ImageView
+        android:id="@+id/card_hundredrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_hundredrupees"
+        app:layout_constraintBottom_toBottomOf="@+id/card_fiftyrupees"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_fiftyrupees"
+        app:layout_constraintTop_toTopOf="@+id/card_fiftyrupees"
+        app:layout_constraintWidth_percent="0.30"
+        />
+
+    <ImageView
+        android:id="@+id/card_twofiftyrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_twohundredfifty"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/card_fivehundredrupees"
+        app:layout_constraintHeight_percent="0.112"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/card_twentyfiverupees"
+        app:layout_constraintVertical_bias="0.148"
+        app:layout_constraintWidth_percent="0.30"
+        />
+
+    <ImageView
+        android:id="@+id/card_fivehundredrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fivehundred"
+        app:layout_constraintBottom_toBottomOf="@+id/card_twofiftyrupees"
+        app:layout_constraintEnd_toStartOf="@+id/card_onethousandrupees"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_twofiftyrupees"
+        app:layout_constraintTop_toTopOf="@+id/card_twofiftyrupees"
+        app:layout_constraintWidth_percent="0.30"
+        />
+
+    <ImageView
+        android:id="@+id/card_onethousandrupees"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_onethousand"
+        app:layout_constraintBottom_toBottomOf="@+id/card_fivehundredrupees"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_fivehundredrupees"
+        app:layout_constraintTop_toTopOf="@+id/card_fivehundredrupees"
+        app:layout_constraintWidth_percent="0.30"
+        />
+
+    <ImageView
+        android:id="@+id/card_playwithfriends_callbreak"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_playwithfriends"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/card_onethousandrupees"
+        app:layout_constraintVertical_bias="0.23"
+        app:layout_constraintWidth_percent="0.42" />
+
+    <ImageView
+        android:id="@+id/card_tournaments_callbreak"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_tournaments"
+        app:layout_constraintBottom_toBottomOf="@id/card_playwithfriends_callbreak"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/card_playwithfriends_callbreak"
+        app:layout_constraintWidth_percent="0.42" />
+
+    <ImageView
+        android:id="@+id/img_myopengames_callbreak"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_opengames"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/card_playwithfriends_callbreak"
+        app:layout_constraintVertical_bias="0.6"
+        app:layout_constraintHeight_percent="0.07"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/layout_callbreaklobby_content"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:constraint_referenced_ids="card_fiverupees, card_tenrupees, card_twentyrupees,
+        card_twentyfiverupees, card_fiftyrupees, card_hundredrupees, card_twofiftyrupees,
+        card_fivehundredrupees, card_onethousandrupees, card_playwithfriends_callbreak,
+        card_tournaments_callbreak, img_myopengames_callbreak"
+        android:visibility="visible"
+        />
+
+    <!--    OPEN GAMES DIALOG-->
+    <View
+        android:id="@+id/playwithfriends_transparent_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/DrawerTransaprentBG_70"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <View
+        android:id="@+id/playwithfriends_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/paddinglayout"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/caper_topradius_bg"
+        android:paddingTop="@dimen/pixel_8dp"
+        />
+
+    <View
+        android:id="@+id/paddinglayout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_back"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintHeight_percent="0.06"
+        />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/back_arrow"
+        app:layout_constraintBottom_toTopOf="@id/txt_createprivatetable"
+        app:layout_constraintHeight_percent="0.02"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.92"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintWidth_percent="0.06" />
+
+    <TextView
+        android:id="@+id/txt_subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/play_with_friends"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="@id/btn_back"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/txt_createprivatetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/create_private_table"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_joinatable"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@+id/txt_joinatable"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <ImageView
+        android:id="@+id/arrow_createprivatetable"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/forward_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/txt_createprivatetable"
+        app:layout_constraintHeight_percent="0.02"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toTopOf="@id/txt_createprivatetable"
+        app:layout_constraintWidth_percent="0.06" />
+
+    <View
+        android:id="@+id/btn_createprivatetable"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_createprivatetable"
+        app:layout_constraintEnd_toEndOf="@id/arrow_createprivatetable"
+        app:layout_constraintTop_toTopOf="@id/txt_createprivatetable"
+        app:layout_constraintBottom_toBottomOf="@id/txt_createprivatetable"
+        />
+
+    <TextView
+        android:id="@+id/txt_joinatable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/join_a_table"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <ImageView
+        android:id="@+id/arrow_joinatable"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/forward_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/txt_joinatable"
+        app:layout_constraintHeight_percent="0.02"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toTopOf="@id/txt_joinatable"
+        app:layout_constraintWidth_percent="0.06" />
+
+    <View
+        android:id="@+id/btn_openjoinatablelayout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_joinatable"
+        app:layout_constraintEnd_toEndOf="@id/arrow_joinatable"
+        app:layout_constraintTop_toTopOf="@id/txt_joinatable"
+        app:layout_constraintBottom_toBottomOf="@id/txt_joinatable"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/layout_playwithfriendsoptions"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:constraint_referenced_ids="arrow_joinatable, btn_openjoinatablelayout, txt_joinatable, arrow_createprivatetable,
+        btn_createprivatetable, txt_createprivatetable, txt_subheading, btn_back, playwithfriends_bg,
+        playwithfriends_transparent_bg, paddinglayout"
+        android:visibility="gone"
+        />
+
+<!--    JOIN A TABLE-->
+
+    <View
+        android:id="@+id/joinatable_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/joinatable_paddinglayout"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/caper_topradius_bg"
+        android:paddingTop="@dimen/pixel_8dp"
+        />
+
+    <View
+        android:id="@+id/joinatable_paddinglayout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_backjoinatable"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintHeight_percent="0.06"
+        />
+
+    <ImageView
+        android:id="@+id/btn_backjoinatable"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/back_arrow"
+        app:layout_constraintBottom_toTopOf="@id/edt_tableid_joinatbale"
+        app:layout_constraintHeight_percent="0.02"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.92"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintWidth_percent="0.06" />
+
+    <TextView
+        android:id="@+id/txt_subheading_joinatable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/join_a_table"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_backjoinatable"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/btn_backjoinatable"
+        app:layout_constraintTop_toTopOf="@id/btn_backjoinatable"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <EditText
+        android:id="@+id/edt_tableid_joinatbale"
+        style="@style/EditextStyle"
+        android:background="@drawable/edittext_bg"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:textSize="@dimen/pixel_15dp"
+        android:hint="@string/enter_tableid_hint"
+        android:textColorHint="@color/orangy_yellow_opacity"
+        app:layout_constraintBottom_toTopOf="@id/btn_joinatable"
+        app:layout_constraintEnd_toEndOf="@id/btn_joinatable"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintStart_toStartOf="@id/btn_joinatable"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="0.96" />
+
+
+    <Button
+        android:id="@+id/btn_joinatable"
+        style="@style/JoshButton"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/flat_red_button_bg"
+        android:text="@string/join_string"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintVertical_bias="0.98"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/topGuildeLine"
+        />
+<androidx.constraintlayout.widget.Group
+    android:id="@+id/layout_joinatable"
+    android:layout_width="@dimen/pixel_0dp"
+    android:layout_height="@dimen/pixel_0dp"
+    app:constraint_referenced_ids="btn_joinatable, edt_tableid_joinatbale, txt_subheading_joinatable,
+    btn_backjoinatable, joinatable_paddinglayout, joinatable_bg"
+    android:visibility="gone"
+    />
+
+<!--    OPEN GAMES-->
+    <!--    JOIN A TABLE-->
+
+    <View
+        android:id="@+id/joinatable_transparent_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/DrawerTransaprentBG_70"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <View
+        android:id="@+id/opengames_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/opengames_paddinglayout"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/caper_topradius_bg"
+        android:paddingTop="@dimen/pixel_8dp"
+        />
+
+    <View
+        android:id="@+id/opengames_paddinglayout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_backopengames"
+        app:layout_constraintTop_toBottomOf="@id/topGuildeLine"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintVertical_bias="1"
+        />
+
+    <ImageView
+        android:id="@+id/btn_backopengames"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/back_arrow"
+        app:layout_constraintBottom_toTopOf="@id/opengames_recyclerview"
+        app:layout_constraintHeight_percent="0.02"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.92"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuiudeline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintWidth_percent="0.06" />
+
+    <TextView
+        android:id="@+id/txt_subheading_opengames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/open_games_heading"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_backopengames"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/btn_backopengames"
+        app:layout_constraintTop_toTopOf="@id/btn_backopengames"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/opengames_recyclerview"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+         app:layout_constraintHeight_percent="0.106"
+        app:layout_constraintVertical_bias="0.945"
+        app:layout_constraintTop_toBottomOf="@id/topGuildeLine"
+         app:layout_constraintBottom_toTopOf="@+id/bottomGuideline"
+         app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        app:layout_constraintRight_toLeftOf="@id/rightGuiudeline"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/txt_noopengames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubiklight"
+        android:text="@string/no_open_games"
+        android:textColor="@color/darkergrey"
+        android:textSize="@dimen/pixel_18dp"
+        android:background="@drawable/secondarycaper_roundedcorner_bg"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/opengames_recyclerview"
+        app:layout_constraintEnd_toStartOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/opengames_recyclerview"
+        app:layout_constraintVertical_bias="0.3"
+        android:paddingTop="@dimen/pixel_8dp"
+        android:paddingBottom="@dimen/pixel_8dp"
+        android:paddingLeft="@dimen/pixel_12dp"
+        android:paddingRight="@dimen/pixel_12dp"
+        android:visibility="gone"
+        />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/layout_opengames"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:constraint_referenced_ids="opengames_bg, opengames_paddinglayout, opengames_recyclerview,
+txt_subheading_opengames, btn_backopengames, joinatable_transparent_bg"
+        android:visibility="gone"
+        />
+
+    <!--    BUYIN DIALOG-->
+
+    <View
+        android:id="@+id/buyindialog_transparent_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@color/DrawerTransaprentBG_70"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/buyindialog_bg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/paddinglayoutbuyin"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/caper_topradius_bg"
+        android:paddingTop="@dimen/pixel_8dp"
+        />
+
+    <View
+        android:id="@+id/paddinglayoutbuyin"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_gamenameval"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintHeight_percent="0.06"
+        />
+
+    <TextView
+        android:id="@+id/txt_gamenameval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="201 Rummy"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_gamelabel"
+        app:layout_constraintEnd_toEndOf="@id/btn_playgame"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@id/txt_gamelabel"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.96"
+        />
+
+    <TextView
+        android:id="@+id/txt_playersval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="6"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_playerslabel"
+        app:layout_constraintEnd_toEndOf="@id/btn_playgame"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@id/txt_playerslabel"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.96"
+        />
+
+    <TextView
+        android:id="@+id/txt_betamountval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="₹ 100"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_betamountlabel"
+        app:layout_constraintEnd_toEndOf="@id/btn_playgame"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@id/txt_betamountlabel"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.96"
+        />
+
+    <TextView
+        android:id="@+id/txt_gamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/gamelabel"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_playerslabel"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@id/txt_additionalearnings"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.96"
+        />
+
+    <TextView
+        android:id="@+id/txt_playerslabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/playerslabel"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_betamountlabel"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@id/txt_additionalearnings"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.96"
+        />
+
+    <TextView
+        android:id="@+id/txt_betamountlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:text="@string/betamountlabel"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_18dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancelbuyin"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@id/txt_additionalearnings"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.91"
+        />
+
+    <Button
+        android:id="@+id/btn_cancelbuyin"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        style="@style/JoshButton"
+        android:text="@string/cancel"
+        android:textColor="@color/red_button"
+        android:background="@drawable/button_transparent_bg"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintWidth_percent="0.39"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintVertical_bias="1"
+        />
+
+    <Button
+        android:id="@+id/btn_playgame"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        style="@style/JoshButton"
+        android:text="@string/play"
+        android:background="@drawable/flat_red_button_bg"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintBottom_toBottomOf="@id/btn_cancelbuyin"
+        app:layout_constraintTop_toTopOf="@+id/btn_cancelbuyin"
+        app:layout_constraintWidth_percent="0.39"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintHorizontal_bias="0.93"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_buyinconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="btn_playgame, btn_cancelbuyin, txt_betamountlabel, txt_betamountval,
+        txt_playerslabel, txt_playersval, txt_gamelabel, txt_gamenameval, buyindialog_bg, buyindialog_transparent_bg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

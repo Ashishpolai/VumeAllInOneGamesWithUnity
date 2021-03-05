@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval"
+            >
+
+            <size
+                android:width="@dimen/pixel_50dp"
+                android:height="@dimen/pixel_50dp" />
+
+            <solid
+                android:color="@color/pink" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/icon_teenprofile"
+        android:bottom="@dimen/pixel_3dp"
+        android:top="@dimen/pixel_3dp"
+        android:left="@dimen/pixel_3dp"
+        android:right="@dimen/pixel_3dp"
+        />
+</layer-list>

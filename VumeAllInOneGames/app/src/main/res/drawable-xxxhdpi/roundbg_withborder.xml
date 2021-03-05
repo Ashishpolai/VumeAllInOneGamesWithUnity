@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval"
+            >
+
+            <size
+                android:width="@dimen/pixel_27dp"
+                android:height="@dimen/pixel_27dp" />
+
+            <solid
+                android:color="@color/DrawerTransaprentBG" />
+
+
+            <stroke
+                android:width="1.5dp"
+                android:color="@color/red_button" />
+
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_camera" />
+</layer-list>

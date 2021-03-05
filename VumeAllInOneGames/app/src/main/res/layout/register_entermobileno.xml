@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/lbl_registerforrummy"
+        style="@style/SubHeading"
+        android:text="@string/heading_registerforrummy"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        android:visibility="visible"
+        />
+
+    <TextView
+        android:id="@+id/lbl_mobileno"
+        style="@style/EditextLabel"
+        android:text="@string/label_mobileno"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_registerforrummy"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_mobileno"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:background="@drawable/edittext_bg"
+        app:layout_constraintHeight_max="@dimen/pixel_55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_mobileno"
+        app:layout_constraintVertical_bias="0.015"
+        app:layout_constraintWidth_percent="1">
+
+        <View
+            android:id="@+id/btn_changecountrycode"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/lbl_countrycode"
+            app:layout_constraintHorizontal_bias="0"
+            android:background="@drawable/transparent_leftradius_bg"
+            />
+
+        <TextView
+            android:id="@+id/lbl_countrycode"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_0dp"
+            android:fontFamily="@font/rubikregular"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.15"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0"
+            />
+
+        <EditText
+            android:id="@+id/edt_mobileno"
+            style="@style/EditextStyle"
+            android:background="@color/DrawerTransaprentBG"
+            android:maxLength="10"
+            android:inputType="phone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="1"
+            app:layout_constraintStart_toEndOf="@id/lbl_countrycode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.015"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/lbl_referralcode"
+        style="@style/EditextLabel"
+        android:text="@string/label_referralcode"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/layout_mobileno"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/edt_referralcode"
+        style="@style/EditextStyle"
+        android:background="@drawable/edittext_bg"
+        android:maxLength="20"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_referralcode"
+        app:layout_constraintVertical_bias="0.015"/>
+
+    <Button
+        android:id="@+id/btn_getotp"
+        style="@style/JoshButton"
+        android:background="@drawable/button_bg"
+        android:text="@string/get_otp_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@id/edt_referralcode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.14"/>
+
+    <View
+        android:id="@+id/view_dividerleft"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_1dp"
+        android:layout_gravity="center"
+        android:background="@color/orangydark"
+        android:fontFamily="@font/rubikregular"
+        android:gravity="center"
+        app:autoSizeTextType="uniform"
+        android:alpha="0.6"
+        app:layout_constraintBottom_toBottomOf="@id/lbl_newtojoshrummy"
+        app:layout_constraintEnd_toStartOf="@+id/lbl_newtojoshrummy"
+        app:layout_constraintTop_toBottomOf="@id/btn_getotp"
+        app:layout_constraintTop_toTopOf="@id/lbl_newtojoshrummy"
+        app:layout_constraintWidth_percent="1" />
+
+    <TextView
+        android:id="@+id/lbl_newtojoshrummy"
+        style="@style/SubTextSmallLabel"
+        android:gravity="center"
+        android:paddingLeft="@dimen/pixel_8dp"
+        android:paddingRight="@dimen/pixel_8dp"
+        android:text="@string/label_haveanaccount"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_getotp"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <View
+        android:id="@+id/view_dividerright"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_1dp"
+        android:layout_gravity="center"
+        android:background="@color/orangydark"
+        android:fontFamily="@font/rubikregular"
+        android:gravity="center"
+        app:autoSizeTextType="uniform"
+        android:alpha="0.6"
+        app:layout_constraintBottom_toBottomOf="@id/lbl_newtojoshrummy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_newtojoshrummy"
+        app:layout_constraintTop_toBottomOf="@id/btn_getotp"
+        app:layout_constraintTop_toTopOf="@+id/lbl_newtojoshrummy"
+        app:layout_constraintWidth_percent="1" />
+
+    <Button
+        android:id="@+id/btn_gotologin"
+        style="@style/JoshButton"
+        android:textColor="@color/red_button"
+        android:background="@drawable/button_transparent_bg"
+        android:text="@string/login_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_newtojoshrummy"
+        app:layout_constraintVertical_bias="0.35"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg"
+    tools:context="com.vume.allinonegames.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/splash_gameicon"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/app_icon"
+        app:layout_constraintWidth_percent="0.48"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/splash_gametext"
+        app:layout_constraintVertical_bias="1"
+        />
+
+    <ImageView
+        android:id="@+id/splash_gametext"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/joshrummy_splashtext"
+        app:layout_constraintWidth_percent="0.43"
+        app:layout_constraintHeight_percent="0.19"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/progress_bar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.92"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/pixel_250dp"
+            android:layout_height="@dimen/pixel_13dp"
+            android:padding="@dimen/pixel_2dp"
+            android:progressDrawable="@drawable/custom_progressbar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/update_available_alert_layout"
+        android:layout_width="@dimen/pixel_320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.92"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="11">
+
+        <TextView
+            android:id="@+id/loading_txt"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_20dp"
+            android:gravity="center"
+            android:text="@string/update_available_alert"
+            android:textColor="@color/orangydark"
+            android:fontFamily="@font/rubikmedium"
+            app:autoSizeTextType="uniform"
+            android:layout_weight="7.8"
+            />
+
+        <View
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_1dp"
+            android:layout_weight="0.2"
+            />
+
+        <Button
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_height="@dimen/pixel_33dp"
+            android:background="@drawable/flat_red_button_bg"
+            android:layout_weight="3"
+            android:text="@string/install"
+            app:autoSizeTextType="uniform"
+            style="@style/JoshButton"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

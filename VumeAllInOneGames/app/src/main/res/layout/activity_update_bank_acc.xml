@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg"
+    tools:context=".UpdateBankAccActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuildeLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuiudeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96998125" />
+
+    <ImageView
+        android:id="@+id/heading_laypout"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/orangyyellow_bottomradius_bg"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHeight_percent="0.15"
+        />
+
+    <TextView
+        android:id="@+id/heading"
+        style="@style/LargeSubHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/pixel_19dp"
+        android:text="@string/update_bank_account_heading"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/topGuildeLine"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:layout_marginEnd="@dimen/pixel_8dp"
+        android:src="@mipmap/left_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/heading"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintHeight_percent="0.02"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/heading"
+        app:layout_constraintWidth_percent="0.08" />
+
+    <TextView
+        android:id="@+id/heading_updatebankdetails"
+        style="@style/EditextLabel"
+        android:text="@string/submit_bankdetails_heading"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintTop_toBottomOf="@+id/heading_laypout"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/lbl_accounholdername"
+        style="@style/EditextLabel"
+        android:text="@string/label_accountholdername"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/heading_updatebankdetails"
+        app:layout_constraintVertical_bias="0.07"
+        android:textSize="@dimen/pixel_14dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_accounholdername"
+        style="@style/EditextStyle"
+        android:background="@drawable/edittext_bg"
+        android:inputType="text"
+        app:layout_constraintHeight_percent="0.055"
+        android:textSize="16dp"
+        android:maxLength="50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintTop_toBottomOf="@id/lbl_accounholdername"
+        app:layout_constraintVertical_bias="0.02"/>
+
+    <TextView
+        android:id="@+id/lbl_accholdername_val"
+        style="@style/LabelValues"
+        android:alpha="1"
+        android:textSize="@dimen/pixel_17dp"
+        app:layout_constraintBottom_toTopOf="@id/lbl_bankname"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_accounholdername"
+        app:layout_constraintVertical_bias="0.25"
+        />
+
+    <ImageView
+        android:id="@+id/lbl_accounholdername_edit_button"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/icon_edit_red"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_accholdername_val"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/lbl_accholdername_val"
+        app:layout_constraintWidth_percent="0.07"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/lbl_accountholdername_edit"
+        style="@style/EditextLabel"
+        android:alpha="1"
+        android:text="@string/edit"
+        android:textColor="@color/red_button"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_accholdername_val"
+        app:layout_constraintEnd_toStartOf="@id/lbl_accounholdername_edit_button"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/lbl_accholdername_val"
+        app:layout_constraintVertical_bias="0.90"
+        android:visibility="invisible"
+        />
+
+    <View
+        android:id="@+id/btn_editaccholdername"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="@+id/lbl_accountholdername_edit"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_accounholdername_edit_button"
+        app:layout_constraintTop_toTopOf="@+id/lbl_accountholdername_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_accountholdername_edit"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/lbl_bankname"
+        style="@style/EditextLabel"
+        android:text="@string/label_bankname"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/edt_accounholdername"
+        app:layout_constraintVertical_bias="0.03"
+        android:textSize="@dimen/pixel_14dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/edt_bankname"
+        style="@style/EditextStyle"
+        android:background="@drawable/edittext_bg"
+        android:inputType="text"
+        app:layout_constraintHeight_percent="0.055"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintTop_toBottomOf="@id/lbl_bankname"
+        app:layout_constraintVertical_bias="0.027"/>
+
+    <TextView
+        android:id="@+id/lbl_banknae_val"
+        style="@style/LabelValues"
+        android:alpha="1"
+        android:textSize="@dimen/pixel_17dp"
+        app:layout_constraintBottom_toTopOf="@id/lbl_accountno"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_bankname"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/lbl_bankname_edit_button"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/icon_edit_red"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_banknae_val"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/lbl_banknae_val"
+        app:layout_constraintWidth_percent="0.07"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/lbl_bankname_edit"
+        style="@style/EditextLabel"
+        android:alpha="1"
+        android:text="@string/edit"
+        android:textColor="@color/red_button"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_banknae_val"
+        app:layout_constraintEnd_toStartOf="@id/lbl_bankname_edit_button"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/lbl_banknae_val"
+        app:layout_constraintVertical_bias="0.90"
+        android:visibility="invisible"
+        />
+
+    <View
+        android:id="@+id/btn_editbankname"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="@+id/lbl_bankname_edit"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_bankname_edit_button"
+        app:layout_constraintTop_toTopOf="@+id/lbl_bankname_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_bankname_edit"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/lbl_accountno"
+        style="@style/EditextLabel"
+        android:text="@string/label_accountnumber"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/edt_bankname"
+        app:layout_constraintVertical_bias="0.035"
+        android:textSize="@dimen/pixel_14dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_accountno"
+        style="@style/EditextStyle"
+        android:background="@drawable/edittext_bg"
+        android:inputType="number"
+        app:layout_constraintHeight_percent="0.055"
+        android:textSize="16dp"
+        android:maxLength="30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintTop_toBottomOf="@id/lbl_accountno"
+        app:layout_constraintVertical_bias="0.03"/>
+
+    <TextView
+        android:id="@+id/lbl_accno_val"
+        style="@style/LabelValues"
+        android:alpha="1"
+        android:textSize="@dimen/pixel_17dp"
+        app:layout_constraintBottom_toTopOf="@id/lbl_branch"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_accountno"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/lbl_accno_edit_button"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/icon_edit_red"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_accno_val"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/lbl_accno_val"
+        app:layout_constraintWidth_percent="0.07"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/lbl_accno_edit"
+        style="@style/EditextLabel"
+        android:alpha="1"
+        android:text="@string/edit"
+        android:textColor="@color/red_button"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_accno_val"
+        app:layout_constraintEnd_toStartOf="@id/lbl_accno_edit_button"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/lbl_accno_val"
+        app:layout_constraintVertical_bias="0.90"
+        android:visibility="invisible"
+        />
+
+    <View
+        android:id="@+id/btn_editaccno"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="@+id/lbl_accno_edit"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_accno_edit_button"
+        app:layout_constraintTop_toTopOf="@+id/lbl_accno_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_accno_edit"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/lbl_branch"
+        style="@style/EditextLabel"
+        android:text="@string/label_branch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/edt_accountno"
+        app:layout_constraintVertical_bias="0.044"
+        android:textSize="@dimen/pixel_14dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_branch"
+        style="@style/EditextStyle"
+        android:background="@drawable/edittext_bg"
+        android:inputType="text"
+        app:layout_constraintHeight_percent="0.055"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintTop_toBottomOf="@id/lbl_branch"
+        app:layout_constraintVertical_bias="0.04"/>
+
+    <TextView
+        android:id="@+id/lbl_branch_val"
+        style="@style/LabelValues"
+        android:alpha="1"
+        android:textSize="@dimen/pixel_17dp"
+        app:layout_constraintBottom_toTopOf="@id/lbl_ifsccode"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_branch"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/lbl_branch_edit_button"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/icon_edit_red"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_branch_val"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/lbl_branch_val"
+        app:layout_constraintWidth_percent="0.07"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/lbl_branch_edit"
+        style="@style/EditextLabel"
+        android:alpha="1"
+        android:text="@string/edit"
+        android:textColor="@color/red_button"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_branch_val"
+        app:layout_constraintEnd_toStartOf="@id/lbl_branch_edit_button"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/lbl_branch_val"
+        app:layout_constraintVertical_bias="0.90"
+        android:visibility="invisible"
+        />
+
+    <View
+        android:id="@+id/btn_editbranch"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="@+id/lbl_branch_edit"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_branch_edit_button"
+        app:layout_constraintTop_toTopOf="@+id/lbl_branch_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_branch_edit"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/lbl_ifsccode"
+        style="@style/EditextLabel"
+        android:text="@string/label_ifsccode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/edt_branch"
+        app:layout_constraintVertical_bias="0.07"
+        android:textSize="@dimen/pixel_14dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_ifsccode"
+        style="@style/EditextStyle"
+        android:background="@drawable/edittext_bg"
+        android:inputType="text"
+        app:layout_constraintHeight_percent="0.055"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintTop_toBottomOf="@id/lbl_ifsccode"
+        app:layout_constraintVertical_bias="0.06"/>
+
+    <TextView
+        android:id="@+id/lbl_ifsc_val"
+        style="@style/LabelValues"
+        android:alpha="1"
+        android:textSize="@dimen/pixel_17dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_submitbankdetails"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_ifsccode"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/note_msg"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:gravity="left"
+        android:text="@string/edit_bankacc_note"
+        android:textColor="@color/orangydark"
+        android:textSize="@dimen/pixel_17dp"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuiudeline"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_ifsc_val"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        />
+
+    <ImageView
+        android:id="@+id/lbl_ifsc_edit_button"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        android:src="@mipmap/icon_edit_red"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_ifsc_val"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/lbl_ifsc_val"
+        app:layout_constraintWidth_percent="0.07"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/lbl_ifsc_edit"
+        style="@style/EditextLabel"
+        android:alpha="1"
+        android:text="@string/edit"
+        android:textColor="@color/red_button"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_ifsc_val"
+        app:layout_constraintEnd_toStartOf="@id/lbl_ifsc_edit_button"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/lbl_ifsc_val"
+        app:layout_constraintVertical_bias="0.90"
+        android:visibility="invisible"
+        />
+
+    <View
+        android:id="@+id/btn_editifsc"
+        android:layout_width="@dimen/pixel_0dp"
+        android:layout_height="@dimen/pixel_0dp"
+        app:layout_constraintStart_toStartOf="@+id/lbl_ifsc_edit"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_ifsc_edit_button"
+        app:layout_constraintTop_toTopOf="@+id/lbl_ifsc_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_ifsc_edit"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/btn_submitbankdetails"
+        style="@style/JoshButton"
+        android:background="@drawable/button_bg"
+        android:text="@string/submit"
+        app:layout_constraintHeight_percent="0.060"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/edt_ifsccode"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuiudeline"
+        app:layout_constraintVertical_bias="0.8"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/edit_bank_details_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="btn_submitbankdetails, edt_ifsccode, edt_branch, edt_accountno,
+        edt_bankname, edt_accounholdername, heading_updatebankdetails"
+        android:visibility="invisible"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/show_bank_details_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="lbl_ifsc_val,
+        lbl_branch_val,  lbl_accno_val,
+        lbl_banknae_val,  lbl_accholdername_val, note_msg"
+        android:visibility="visible"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/all_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="lbl_accounholdername, lbl_bankname,
+        lbl_accountno, lbl_branch, lbl_ifsccode"
+        android:visibility="visible"
+        />
+
+<!--    <androidx.constraintlayout.widget.Group-->
+<!--        android:id="@+id/show_bank_details_layout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:constraint_referenced_ids="lbl_ifsc_val, lbl_ifsc_edit, lbl_ifsc_edit_button,-->
+<!--        lbl_branch_val, lbl_branch_edit, lbl_branch_edit_button, lbl_accno_val, lbl_accno_edit, lbl_accno_edit_button,-->
+<!--        lbl_banknae_val, lbl_bankname_edit, lbl_bankname_edit_button, lbl_accholdername_val, lbl_accounholdername_edit_button,-->
+<!--        lbl_accountholdername_edit"-->
+<!--        android:visibility="visible"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
