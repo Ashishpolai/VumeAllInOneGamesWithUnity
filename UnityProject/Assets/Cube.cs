@@ -32,9 +32,11 @@ public class Cube : MonoBehaviour
         {
             case "ludo":
                 GameObject cube = GameObject.FindGameObjectsWithTag("mycube")[0];
-                    //Get the Renderer component from the new cube
+                GameObject sphere = GameObject.FindGameObjectsWithTag("mysphere")[0];
+                //Get the Renderer component from the new cube
                 var cubeRenderer = cube.GetComponent<Renderer>();
-
+                cube.SetActive(true);
+                sphere.SetActive(false);
                 //Call SetColor using the shader property name "_Color" and setting the color to red
                 cubeRenderer.material.SetColor("_Color", Color.green);
                 showToast("Hello Ludo GREEN from Unity");
@@ -42,11 +44,13 @@ public class Cube : MonoBehaviour
 
             case "poker":
                 GameObject cubei = GameObject.FindGameObjectsWithTag("mycube")[0];
+                GameObject spherei = GameObject.FindGameObjectsWithTag("mysphere")[0];
                 //Get the Renderer component from the new cube
-                var cubeRendereri = cubei.GetComponent<Renderer>();
-
+                var sphereRendereri = spherei.GetComponent<Renderer>();
+                cubei.SetActive(false);
+                spherei.SetActive(true);
                 //Call SetColor using the shader property name "_Color" and setting the color to red
-                cubeRendereri.material.SetColor("_Color", Color.yellow);
+                sphereRendereri.material.SetColor("_Color", Color.yellow);
                 showToast("Hello Poker YELLOW from Unity");
                 break;
         }
